@@ -1,0 +1,11 @@
+Building FUDcoin
+
+Install this coin at your own risk.
+
+See doc/readme-qt.rst for instructions on building FUDcoin
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Fudcoin.
+
+See doc/build-*.txt for instructions on building fudcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of FUDcoin.
