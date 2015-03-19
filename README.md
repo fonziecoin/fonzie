@@ -18,6 +18,7 @@
 - Max PoW Coins: 500,019,740 XFC
 - Last PoW Block Number: 43260
 - PoW Duration: ~120 Days
+- Blocks to Maturity: 240
 - Premine: 0 XFC
 - Starting Difficulty: ~3000
 - Fair Launch Blocks: 60 Blocks
