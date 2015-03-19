@@ -34,7 +34,7 @@ SendMessagesDialog::SendMessagesDialog(Mode mode, Type type, QWidget *parent) :
 #if QT_VERSION >= 0x040700
      /* Do not move this to the XML file, Qt before 4.7 will choke on it */
     if(mode == SendMessagesDialog::Encrypted)
-        ui->addressFrom->setPlaceholderText(tr("Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)"));
+        ui->addressFrom->setPlaceholderText(tr("Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)"));
  #endif
     addEntry();
 
@@ -155,7 +155,11 @@ void SendMessagesDialog::on_sendButton_clicked()
     QStringList formatted;
     foreach(const SendMessagesRecipient &rcp, recipients)
     {
+#if QT_VERSION < 0x050000
         formatted.append(tr("<b>%1</b> to %2 (%3)").arg(rcp.message, Qt::escape(rcp.label), rcp.address));
+#else
+        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(rcp.message, rcp.label.toHtmlEscaped(), rcp.address));
+#endif
     }
 
     fNewRecipientAllowed = false;

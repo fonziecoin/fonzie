@@ -19,18 +19,23 @@ using namespace std;
 map<uint256, CAlert> mapAlerts;
 CCriticalSection cs_mapAlerts;
 
-// fudcoin trap door key
+// main net alert key
 static const char* pszMainKey = 
-    "0418c54c5c6bc092db0f77fa64732cc9746abeacf898904f421ea564b5e4"
-    "5f05b30d17d288af681a495819537460fc321960efe1cf4580b9a69a6000"
-    "6a0ac9f2c9";
+                     "04a35f9ec9b869f0433c614ea18eba"
+                     "83b01dd59ab32d04807c7575cdea84"
+                     "f071d249285613e85626ac0f765376"
+                     "cd9ed6a31eac17754ddc25089466a9"
+                     "6d9905bbbb";
 
 
-// testing is for dorks - trapdoor doesn't matter
+// test net alert key
 static const char* pszTestKey =
-    "0418c54c5c6bc092db0f77fa64732cc9746abeacf898904f421ea564b5e4"
-    "5f05b30d17d288af681a495819537460fc321960efe1cf4580b9a69a6000"
-    "6a0ac9f2c9";
+                     "04028a83553b1e32c1eb08333321e9"
+                     "945386b9dd1c6dbf1554f76fac37ea"
+                     "02adb073e82e859570eaa0697f5636"
+                     "d35c067c4cd56626dfd1daaff041fa"
+                     "f9a3f41804";
+
 
 
 void CUnsignedAlert::SetNull()

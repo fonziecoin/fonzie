@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About FUDcoin</source>
-        <translation>Au sujet de FUDcoin</translation>
+        <source>About FonzieCoin</source>
+        <translation>Au sujet de FonzieCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;FUDcoin&lt;/b&gt; version</source>
-        <translation>Version de &lt;b&gt;FUDcoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;FonzieCoin&lt;/b&gt; version</source>
+        <translation>Version de &lt;b&gt;FonzieCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -66,7 +66,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your FUDcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your FonzieCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Ce sont vos adresses pour recevoir vos paiements. Vous pouvez utiliser une adresse différente pour chaque réception afin d&apos;identifier facilement le payeur.</translation>
     </message>
     <message>
@@ -81,8 +81,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a FUDcoin address</source>
-        <translation>Signer un message afin de valider l&apos;identité de votre adresse FUDcoin</translation>
+        <source>Sign a message to prove you own a FonzieCoin address</source>
+        <translation>Signer un message afin de valider l&apos;identité de votre adresse FonzieCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -96,8 +96,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified FUDcoin address</source>
-        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse FUDcoin spécifique.</translation>
+        <source>Verify a message to ensure it was signed with a specified FonzieCoin address</source>
+        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse FonzieCoin spécifique.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -238,7 +238,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>Avertissement : Si vous chiffrez votre portefeuille et perdez votre passphrase, vous ne pourrez &lt;b&gt;plus accéder à vos FUDcoins&lt;/b&gt;!</translation>
+        <translation>Avertissement : Si vous chiffrez votre portefeuille et perdez votre passphrase, vous ne pourrez &lt;b&gt;plus accéder à vos FonzieCoins&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -264,8 +264,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>FUDcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>L&apos;application FUDcoin va désormais se terminer afin de finaliser le processus de chiffrage. Merci de noter que le chiffrage du portefeuille ne garantit pas de se prémunir du vol via utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
+        <source>FonzieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>L&apos;application FonzieCoin va désormais se terminer afin de finaliser le processus de chiffrage. Merci de noter que le chiffrage du portefeuille ne garantit pas de se prémunir du vol via utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
     </message>
     <message>
         <location line="+13"/>
@@ -378,8 +378,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about FUDcoin</source>
-        <translation>Afficher des informations au sujet de FUDcoin</translation>
+        <source>Show information about FonzieCoin</source>
+        <translation>Afficher des informations au sujet de FonzieCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -428,13 +428,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a FUDcoin address</source>
-        <translation>Envoyer des monnaies vers une adresse FUDcoin</translation>
+        <source>Send coins to a FonzieCoin address</source>
+        <translation>Envoyer des monnaies vers une adresse FonzieCoin</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for FUDcoin</source>
-        <translation>Modification des options de configuration de FUDcoin</translation>
+        <source>Modify configuration options for FonzieCoin</source>
+        <translation>Modification des options de configuration de FonzieCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -473,8 +473,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-200"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -483,8 +483,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About FUDcoin</source>
-        <translation>&amp;Au sujet de FUDcoin</translation>
+        <source>&amp;About FonzieCoin</source>
+        <translation>&amp;Au sujet de FonzieCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -540,13 +540,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>FUDcoin client</source>
-        <translation>Client FUDcoin</translation>
+        <source>FonzieCoin client</source>
+        <translation>Client FonzieCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to FUDcoin network</source>
-        <translation><numerusform>%n connexion active au réseau FUDcoin</numerusform><numerusform>%n connexions actives au réseau FUDcoin</numerusform></translation>
+        <source>%n active connection(s) to FonzieCoin network</source>
+        <translation><numerusform>%n connexion active au réseau FonzieCoin</numerusform><numerusform>%n connexions actives au réseau FonzieCoin</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -660,8 +660,8 @@ Adresse : %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid FUDcoin address or malformed URI parameters.</source>
-        <translation>L&apos;adresse du portefeuille FUDcoin n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FonzieCoin address or malformed URI parameters.</source>
+        <translation>L&apos;adresse du portefeuille FonzieCoin n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -720,8 +720,8 @@ Adresse : %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. FUDcoin can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale a été rencontrée. L&apos;application FUDcoin ne peut plus être s&apos;exécuter de façon correcte et va se terminer.</translation>
+        <source>A fatal error occurred. FonzieCoin can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale a été rencontrée. L&apos;application FonzieCoin ne peut plus être s&apos;exécuter de façon correcte et va se terminer.</translation>
     </message>
 </context>
 <context>
@@ -1054,8 +1054,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid FUDcoin address.</source>
-        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse FUDcoin valide.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FonzieCoin address.</source>
+        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse FonzieCoin valide.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1073,8 +1073,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>FUDcoin-Qt</source>
-        <translation>FUDcoin-Qt</translation>
+        <source>FonzieCoin-Qt</source>
+        <translation>FonzieCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1146,13 +1146,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start FUDcoin after logging in to the system.</source>
-        <translation>Démarrage automatique du client FUDcoin lors de la connexion au système</translation>
+        <source>Automatically start FonzieCoin after logging in to the system.</source>
+        <translation>Démarrage automatique du client FonzieCoin lors de la connexion au système</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start FUDcoin on system login</source>
-        <translation>&amp;Démarrage du client FUDcoin à la connexion au système</translation>
+        <source>&amp;Start FonzieCoin on system login</source>
+        <translation>&amp;Démarrage du client FonzieCoin à la connexion au système</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1171,8 +1171,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the FUDcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquemwnr le port client de FUDcoin sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
+        <source>Automatically open the FonzieCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquemwnr le port client de FonzieCoin sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1181,8 +1181,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the FUDcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connexion au réseau FUDcoin à travers un proxy SOCKS (e.g. Connexion via le réseau Tor).</translation>
+        <source>Connect to the FonzieCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connexion au réseau FonzieCoin à travers un proxy SOCKS (e.g. Connexion via le réseau Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1256,8 +1256,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting FUDcoin.</source>
-        <translation>La langue d&apos;interface de l&apos;utilisateur peut être définie ici. Les modification seront prises en compte après redémarrage de l&apos;application FUDcoin</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FonzieCoin.</source>
+        <translation>La langue d&apos;interface de l&apos;utilisateur peut être définie ici. Les modification seront prises en compte après redémarrage de l&apos;application FonzieCoin</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1271,8 +1271,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show FUDcoin addresses in the transaction list or not.</source>
-        <translation>Afficher les adresses FUDcoin au sein de la liste de transactions</translation>
+        <source>Whether to show FonzieCoin addresses in the transaction list or not.</source>
+        <translation>Afficher les adresses FonzieCoin au sein de la liste de transactions</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1318,8 +1318,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting FUDcoin.</source>
-        <translation>Les paramètres prendront effet après redémarrage du client FUDcoin</translation>
+        <source>This setting will take effect after restarting FonzieCoin.</source>
+        <translation>Les paramètres prendront effet après redémarrage du client FonzieCoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1337,8 +1337,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FUDcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau FUDcoin mais ce processus n&apos;est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FonzieCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau FonzieCoin mais ce processus n&apos;est pas encore terminé.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1553,8 +1553,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the FUDcoin-Qt help message to get a list with possible FUDcoin command-line options.</source>
-        <translation>Afficher le message d&apos;aide FUDcoin-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande FUDcoin</translation>
+        <source>Show the FonzieCoin-Qt help message to get a list with possible FonzieCoin command-line options.</source>
+        <translation>Afficher le message d&apos;aide FonzieCoin-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande FonzieCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1573,13 +1573,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="-104"/>
-        <source>FUDcoin - Debug window</source>
-        <translation>FUDcoin - Fenêtre de déboggage</translation>
+        <source>FonzieCoin - Debug window</source>
+        <translation>FonzieCoin - Fenêtre de déboggage</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>FUDcoin Core</source>
-        <translation>FUDcoin Core</translation>
+        <source>FonzieCoin Core</source>
+        <translation>FonzieCoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1588,8 +1588,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the FUDcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ouvrir le fichier journal de debug FUDcoin au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
+        <source>Open the FonzieCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ouvrir le fichier journal de debug FonzieCoin au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1598,8 +1598,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the FUDcoin RPC console.</source>
-        <translation>Bienvenue sur la console RPC de FUDcoin.</translation>
+        <source>Welcome to the FonzieCoin RPC console.</source>
+        <translation>Bienvenue sur la console RPC de FonzieCoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1672,8 +1672,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 FUD</source>
-        <translation>123.456 FUD {0.00 ?}</translation>
+        <source>0.00 XFC</source>
+        <translation>123.456 XFC {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1742,8 +1742,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 FUD</source>
-        <translation>123.456 FUD</translation>
+        <source>123.456 XFC</source>
+        <translation>123.456 XFC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1757,8 +1757,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Entrer une adresse FUDcoin (par ex: FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Entrer une adresse FonzieCoin (par ex: FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1857,8 +1857,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid FUDcoin address</source>
-        <translation>AVERTISSEMENT: Adresse FUDcoin Invalide</translation>
+        <source>WARNING: Invalid FonzieCoin address</source>
+        <translation>AVERTISSEMENT: Adresse FonzieCoin Invalide</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1868,7 +1868,7 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location line="+4"/>
         <source>WARNING: unknown change address</source>
-        <translation>AVERTISSEMENT: Adresse FUDcoin Invalide</translation>
+        <translation>AVERTISSEMENT: Adresse FonzieCoin Invalide</translation>
     </message>
 </context>
 <context>
@@ -1901,8 +1901,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Adresse destinataire du paiement (par ex: FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to send the payment to  (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Adresse destinataire du paiement (par ex: FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1931,8 +1931,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Entrer une adresse FUDcoin (par ex: FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Entrer une adresse FonzieCoin (par ex: FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
 </context>
 <context>
@@ -1955,8 +1955,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Entrer une adresse FUDcoin (par ex: FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to sign the message with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Entrer une adresse FonzieCoin (par ex: FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1992,8 +1992,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this FUDcoin address</source>
-        <translation>Signer le message afin de prouver l&apos;identité de votre adresse FUDcoin</translation>
+        <source>Sign the message to prove you own this FonzieCoin address</source>
+        <translation>Signer le message afin de prouver l&apos;identité de votre adresse FonzieCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2019,13 +2019,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>L&apos;adresse avec laquelle le message à été signé (ex: FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address the message was signed with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>L&apos;adresse avec laquelle le message à été signé (ex: FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified FUDcoin address</source>
-        <translation>Vérifiez le message afin de vous assurer qu&apos;il provient de l&apos;adresse FUDcoin spécifiée.</translation>
+        <source>Verify the message to ensure it was signed with the specified FonzieCoin address</source>
+        <translation>Vérifiez le message afin de vous assurer qu&apos;il provient de l&apos;adresse FonzieCoin spécifiée.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2035,8 +2035,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Entrer une adresse FUDcoin (par ex: FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Entrer une adresse FonzieCoin (par ex: FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2045,8 +2045,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter FUDcoin signature</source>
-        <translation>Entrer une signature FUDcoin</translation>
+        <source>Enter FonzieCoin signature</source>
+        <translation>Entrer une signature FonzieCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2616,8 +2616,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>FUDcoin version</source>
-        <translation>Version FUDcoin</translation>
+        <source>FonzieCoin version</source>
+        <translation>Version FonzieCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2626,8 +2626,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or fudcoind</source>
-        <translation>Envoyer commande à -server ou fudcoind</translation>
+        <source>Send command to -server or fonziecoind</source>
+        <translation>Envoyer commande à -server ou fonziecoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2646,13 +2646,13 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: fudcoin.conf)</source>
-        <translation>Spécifier le fichier de configuration (par défaut: fudcoin.conf)</translation>
+        <source>Specify configuration file (default: fonziecoin.conf)</source>
+        <translation>Spécifier le fichier de configuration (par défaut: fonziecoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: fudcoind.pid)</source>
-        <translation>Spécifier le fichier pid (par défaut: fudcoind.pid)</translation>
+        <source>Specify pid file (default: fonziecoind.pid)</source>
+        <translation>Spécifier le fichier pid (par défaut: fonziecoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2801,8 +2801,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FUDcoin will not work properly.</source>
-        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. FUDcoin ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FonzieCoin will not work properly.</source>
+        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. FonzieCoin ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2991,24 +2991,24 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FonzieCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, vous devez définir un mot de passe rpc &apos;rpcpassword&apos; au sein du fichier de configuration:
  %s
 Il est recommandé d&apos;utiliser le mot de passe aléatoire suivant:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (il n&apos;est pas nécessaire de retenir ce mot de passe)
 Le nom d&apos;utilisateur et le mot de passe doivent IMPERATIVEMENT être différents.
 Si le fichier n&apos;existe pas, il est nécessaire de le créer, avec les droit de lecture au propriétaire seulement.
 Il est également recommandé d&apos;utiliser l&apos;option alertnotify afin d&apos;être notifié des problèmes;
-par exemple: alertnotify=echo %%s | mail -s &quot;Alerte FUDcoin&quot; admin@foo.com
+par exemple: alertnotify=echo %%s | mail -s &quot;Alerte FonzieCoin&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3133,13 +3133,13 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte FUDcoin&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  FUDcoin is probably already running.</source>
-        <translation>Echec lors de la tentative de verrou des données du répertoire %s. L&apos;application FUDcoin est probablement déjà en cours d&apos;exécution</translation>
+        <source>Cannot obtain a lock on data directory %s.  FonzieCoin is probably already running.</source>
+        <translation>Echec lors de la tentative de verrou des données du répertoire %s. L&apos;application FonzieCoin est probablement déjà en cours d&apos;exécution</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3173,13 +3173,13 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte FUDcoin&quot; admin@foo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of FUDcoin</source>
-        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application FUDcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FonzieCoin</source>
+        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application FonzieCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart FUDcoin to complete</source>
-        <translation>Le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application FUDcoin</translation>
+        <source>Wallet needed to be rewritten: restart FonzieCoin to complete</source>
+        <translation>Le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application FonzieCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3248,8 +3248,8 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte FUDcoin&quot; admin@foo
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. FUDcoin is probably already running.</source>
-        <translation>Connexion au port %s impossible. L&apos;application FUDcoin est probablement déjà en cours d&apos;exécution</translation>
+        <source>Unable to bind to %s on this computer. FonzieCoin is probably already running.</source>
+        <translation>Connexion au port %s impossible. L&apos;application FonzieCoin est probablement déjà en cours d&apos;exécution</translation>
     </message>
     <message>
         <location line="-97"/>

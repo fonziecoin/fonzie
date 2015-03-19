@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About FUDcoin</source>
-        <translation>O FUDcoin</translation>
+        <source>About FonzieCoin</source>
+        <translation>O FonzieCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;FUDcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;FUDcoin&lt;/b&gt; verzija</translation>
+        <source>&lt;b&gt;FonzieCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;FonzieCoin&lt;/b&gt; verzija</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -64,8 +64,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your FUDcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>To so vaši FUDcoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
+        <source>These are your FonzieCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>To so vaši FonzieCoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -79,8 +79,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a FUDcoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva FUDcoin naslova</translation>
+        <source>Sign a message to prove you own a FonzieCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva FonzieCoin naslova</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +94,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified FUDcoin address</source>
-        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim FUDcoin naslovom</translation>
+        <source>Verify a message to ensure it was signed with a specified FonzieCoin address</source>
+        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim FonzieCoin naslovom</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -262,8 +262,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-58"/>
-        <source>FUDcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>FUDcoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
+        <source>FonzieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>FonzieCoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -376,8 +376,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about FUDcoin</source>
-        <translation>Pokaži informacije o FUDcoin</translation>
+        <source>Show information about FonzieCoin</source>
+        <translation>Pokaži informacije o FonzieCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -426,13 +426,13 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a FUDcoin address</source>
-        <translation>Pošlji kovance na FUDcoin naslov</translation>
+        <source>Send coins to a FonzieCoin address</source>
+        <translation>Pošlji kovance na FonzieCoin naslov</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for FUDcoin</source>
-        <translation>Spremeni nastavitve za FUDcoin</translation>
+        <source>Modify configuration options for FonzieCoin</source>
+        <translation>Spremeni nastavitve za FonzieCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -471,8 +471,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-200"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -481,8 +481,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About FUDcoin</source>
-        <translation>&amp;O FUDcoin</translation>
+        <source>&amp;About FonzieCoin</source>
+        <translation>&amp;O FonzieCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -538,13 +538,13 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>FUDcoin client</source>
-        <translation>FUDcoin program</translation>
+        <source>FonzieCoin client</source>
+        <translation>FonzieCoin program</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to FUDcoin network</source>
-        <translation><numerusform>%n aktivne povezave na FUDcoin omrežje</numerusform><numerusform>%n aktivnih povezav na FUDcoin omrežje</numerusform><numerusform>%n aktivnih povezav na FUDcoin omrežje</numerusform><numerusform>%n aktivnih povezav na FUDcoin omrežje</numerusform></translation>
+        <source>%n active connection(s) to FonzieCoin network</source>
+        <translation><numerusform>%n aktivne povezave na FonzieCoin omrežje</numerusform><numerusform>%n aktivnih povezav na FonzieCoin omrežje</numerusform><numerusform>%n aktivnih povezav na FonzieCoin omrežje</numerusform><numerusform>%n aktivnih povezav na FonzieCoin omrežje</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -658,8 +658,8 @@ Naslov: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid FUDcoin address or malformed URI parameters.</source>
-        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega FUDcoin naslova ali slabih parametrov URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FonzieCoin address or malformed URI parameters.</source>
+        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega FonzieCoin naslova ali slabih parametrov URI.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -718,8 +718,8 @@ Naslov: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. FUDcoin can no longer continue safely and will quit.</source>
-        <translation>Prišlo je do usodne napake. Program FUDcoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
+        <source>A fatal error occurred. FonzieCoin can no longer continue safely and will quit.</source>
+        <translation>Prišlo je do usodne napake. Program FonzieCoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
     </message>
 </context>
 <context>
@@ -1052,8 +1052,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid FUDcoin address.</source>
-        <translation>Vneseni naslov &quot;%1&quot; ni veljaven FUDcoin naslov.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FonzieCoin address.</source>
+        <translation>Vneseni naslov &quot;%1&quot; ni veljaven FonzieCoin naslov.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1071,8 +1071,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>FUDcoin-Qt</source>
-        <translation>FUDcoin-Qt</translation>
+        <source>FonzieCoin-Qt</source>
+        <translation>FonzieCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1144,13 +1144,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start FUDcoin after logging in to the system.</source>
-        <translation>Avtomatično zaženi FUDcoin ob zagonu sistema.</translation>
+        <source>Automatically start FonzieCoin after logging in to the system.</source>
+        <translation>Avtomatično zaženi FonzieCoin ob zagonu sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start FUDcoin on system login</source>
-        <translation>&amp;Zaženi FUDcoin ob prijavi v sistem</translation>
+        <source>&amp;Start FonzieCoin on system login</source>
+        <translation>&amp;Zaženi FonzieCoin ob prijavi v sistem</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1169,8 +1169,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the FUDcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata na routerju za FUDcoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
+        <source>Automatically open the FonzieCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata na routerju za FonzieCoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1179,8 +1179,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the FUDcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Poveži se na FUDcoin omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
+        <source>Connect to the FonzieCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Poveži se na FonzieCoin omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1254,8 +1254,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting FUDcoin.</source>
-        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu FUDcoin aplikacije. </translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FonzieCoin.</source>
+        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu FonzieCoin aplikacije. </translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1269,8 +1269,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show FUDcoin addresses in the transaction list or not.</source>
-        <translation>Izbira prikaza FUDcoin naslovov v seznamu transakcij.</translation>
+        <source>Whether to show FonzieCoin addresses in the transaction list or not.</source>
+        <translation>Izbira prikaza FonzieCoin naslovov v seznamu transakcij.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1316,8 +1316,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting FUDcoin.</source>
-        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu FUDcoin aplikacije</translation>
+        <source>This setting will take effect after restarting FonzieCoin.</source>
+        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu FonzieCoin aplikacije</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1335,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FUDcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z FUDcoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FonzieCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z FonzieCoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1551,8 +1551,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the FUDcoin-Qt help message to get a list with possible FUDcoin command-line options.</source>
-        <translation>Prikaži FUDcoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice FUDcoin aplikacije</translation>
+        <source>Show the FonzieCoin-Qt help message to get a list with possible FonzieCoin command-line options.</source>
+        <translation>Prikaži FonzieCoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice FonzieCoin aplikacije</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1571,13 +1571,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>FUDcoin - Debug window</source>
-        <translation>FUDcoin - okno za odpravljanje napak</translation>
+        <source>FonzieCoin - Debug window</source>
+        <translation>FonzieCoin - okno za odpravljanje napak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>FUDcoin Core</source>
-        <translation>FUDcoin jedro</translation>
+        <source>FonzieCoin Core</source>
+        <translation>FonzieCoin jedro</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1586,8 +1586,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the FUDcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpri FUDcoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
+        <source>Open the FonzieCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Odpri FonzieCoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1596,8 +1596,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the FUDcoin RPC console.</source>
-        <translation>Dobrodošli v FUDcoin RPC konzoli.</translation>
+        <source>Welcome to the FonzieCoin RPC console.</source>
+        <translation>Dobrodošli v FonzieCoin RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1670,8 +1670,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 FUD</source>
-        <translation>123.456 FUD {0.00 ?}</translation>
+        <source>0.00 XFC</source>
+        <translation>123.456 XFC {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1740,8 +1740,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 FUD</source>
-        <translation>123.456 FUD</translation>
+        <source>123.456 XFC</source>
+        <translation>123.456 XFC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1755,8 +1755,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Vnesite FUDcoin naslov (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Vnesite FonzieCoin naslov (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1855,8 +1855,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid FUDcoin address</source>
-        <translation>OPOZORILO: Neveljaven FUDcoin naslov</translation>
+        <source>WARNING: Invalid FonzieCoin address</source>
+        <translation>OPOZORILO: Neveljaven FonzieCoin naslov</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1899,8 +1899,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Naslov kamor želite poslati plačilo (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to send the payment to  (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Naslov kamor želite poslati plačilo (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1929,8 +1929,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Vnesite FUDcoin naslov (npr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Vnesite FonzieCoin naslov (npr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
 </context>
 <context>
@@ -1953,8 +1953,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Naslov s katerim želite podpisati sporočilo (npr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to sign the message with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Naslov s katerim želite podpisati sporočilo (npr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1990,8 +1990,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this FUDcoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva FUDcoin naslova</translation>
+        <source>Sign the message to prove you own this FonzieCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva FonzieCoin naslova</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2017,13 +2017,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Naslov s katerim je bilo podpisano sporočilo (npr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address the message was signed with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Naslov s katerim je bilo podpisano sporočilo (npr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified FUDcoin address</source>
-        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim FUDcoin naslovom</translation>
+        <source>Verify the message to ensure it was signed with the specified FonzieCoin address</source>
+        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim FonzieCoin naslovom</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2033,8 +2033,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Vnesite FUDcoin naslov (npr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Vnesite FonzieCoin naslov (npr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2043,8 +2043,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter FUDcoin signature</source>
-        <translation>Vnesite FUDcoin podpis</translation>
+        <source>Enter FonzieCoin signature</source>
+        <translation>Vnesite FonzieCoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2614,8 +2614,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>FUDcoin version</source>
-        <translation>FUDcoin različica</translation>
+        <source>FonzieCoin version</source>
+        <translation>FonzieCoin različica</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2624,8 +2624,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or fudcoind</source>
-        <translation>Pošlji ukaz na -server ali fudcoind</translation>
+        <source>Send command to -server or fonziecoind</source>
+        <translation>Pošlji ukaz na -server ali fonziecoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2644,13 +2644,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: fudcoin.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: fudcoin.conf)</translation>
+        <source>Specify configuration file (default: fonziecoin.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: fonziecoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: fudcoind.pid)</source>
-        <translation>Določi pid datoteko (privzeto: fudcoind.pid)</translation>
+        <source>Specify pid file (default: fonziecoind.pid)</source>
+        <translation>Določi pid datoteko (privzeto: fonziecoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2799,8 +2799,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FUDcoin will not work properly.</source>
-        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno FUDcoin ne bo deloval.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FonzieCoin will not work properly.</source>
+        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno FonzieCoin ne bo deloval.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2989,24 +2989,24 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FonzieCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, nastaviti morate rpcgeslo v konfiguracijski datoteki: 
  %s
 Priporočeno je, da uporabite naslednje naključno geslo:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (tega gesla si vam ni potrebno zapomniti)
 Uporabniško ime in geslo NE SMETA biti ista. 
 Če datoteka ne obstaja, jo ustvarite z lastniškimi dovoljenji za datoteke. 
 Prav tako je priporočeno, da nastavite alernotify, tkako da vas opozori na probleme;
-na primer: alertnotify=echo %%s | mail -s &quot;FUDcoin Alarm&quot; admin@foo.com
+na primer: alertnotify=echo %%s | mail -s &quot;FonzieCoin Alarm&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3131,13 +3131,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;FUDcoin Alarm&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  FUDcoin is probably already running.</source>
-        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija FUDcoin je verjetno že zagnana.</translation>
+        <source>Cannot obtain a lock on data directory %s.  FonzieCoin is probably already running.</source>
+        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija FonzieCoin je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3171,13 +3171,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;FUDcoin Alarm&quot; admin@foo.co
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of FUDcoin</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo FUDcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FonzieCoin</source>
+        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo FonzieCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart FUDcoin to complete</source>
-        <translation>Denarnica mora biti prepisana: ponovno odprite FUDcoin za dokončanje</translation>
+        <source>Wallet needed to be rewritten: restart FonzieCoin to complete</source>
+        <translation>Denarnica mora biti prepisana: ponovno odprite FonzieCoin za dokončanje</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3246,8 +3246,8 @@ na primer: alertnotify=echo %%s | mail -s &quot;FUDcoin Alarm&quot; admin@foo.co
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. FUDcoin is probably already running.</source>
-        <translation>Navezava v %s  na tem računalniku ni mogoča FUDcoin aplikacija je verjetno že zagnana.</translation>
+        <source>Unable to bind to %s on this computer. FonzieCoin is probably already running.</source>
+        <translation>Navezava v %s  na tem računalniku ni mogoča FonzieCoin aplikacija je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-97"/>

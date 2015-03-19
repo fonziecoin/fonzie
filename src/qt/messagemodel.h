@@ -67,7 +67,7 @@ struct MessageTableEntry
     }
 };
 
-/** Interface to FUDcoin Secure Messaging from Qt view code. */
+/** Interface to FonzieCoin Secure Messaging from Qt view code. */
 class MessageModel : public QAbstractTableModel
 {
     Q_OBJECT

@@ -24,6 +24,8 @@ class CNode;
 class CBlockIndex;
 extern int nBestHeight;
 
+// random port number, not used much
+unsigned short const TOR_PORT = 59590;
 
 /** Time between pings automatically sent out for latency probing and keepalive (in seconds). */
 static const int PING_INTERVAL = 2 * 60;
@@ -44,6 +46,7 @@ void MapPort();
 unsigned short GetListenPort();
 bool BindListenPort(const CService &bindAddr, std::string& strError=REF(std::string()));
 void StartNode(void* parg);
+void StartTor(void* parg);
 bool StopNode();
 void SocketSendData(CNode *pnode);
 

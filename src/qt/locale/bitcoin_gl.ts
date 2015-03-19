@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About FUDcoin</source>
-        <translation>Acerca de FUDcoin</translation>
+        <source>About FonzieCoin</source>
+        <translation>Acerca de FonzieCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;FUDcoin&lt;/b&gt; version</source>
-        <translation>Versión &lt;b&gt;FUDcoin&lt;/b&gt; .</translation>
+        <source>&lt;b&gt;FonzieCoin&lt;/b&gt; version</source>
+        <translation>Versión &lt;b&gt;FonzieCoin&lt;/b&gt; .</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -64,8 +64,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your FUDcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estas son as túas dIreccións de FUDcoin para recibir os pagos. Pode que quieras asignarlle unha a cada remitente e así reconocer quen te está a pagar.</translation>
+        <source>These are your FonzieCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Estas son as túas dIreccións de FonzieCoin para recibir os pagos. Pode que quieras asignarlle unha a cada remitente e así reconocer quen te está a pagar.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -79,8 +79,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a FUDcoin address</source>
-        <translation>Firma a mensaxe para probar que tes unha dirección FUDcoin</translation>
+        <source>Sign a message to prove you own a FonzieCoin address</source>
+        <translation>Firma a mensaxe para probar que tes unha dirección FonzieCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +94,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified FUDcoin address</source>
-        <translation>Verifica a mensaxe para asegurar que foi asinada por unha concreta dirección de FUDcoin</translation>
+        <source>Verify a message to ensure it was signed with a specified FonzieCoin address</source>
+        <translation>Verifica a mensaxe para asegurar que foi asinada por unha concreta dirección de FonzieCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -262,8 +262,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="-58"/>
-        <source>FUDcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>FUDcoin pecharase agora para rematar o proceso de encriptación. Recorda que encriptar a túa carteira non te protexe na totalidade do roubo das tuas moedas por infeccións de malware no teu ordenador.</translation>
+        <source>FonzieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>FonzieCoin pecharase agora para rematar o proceso de encriptación. Recorda que encriptar a túa carteira non te protexe na totalidade do roubo das tuas moedas por infeccións de malware no teu ordenador.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -376,8 +376,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about FUDcoin</source>
-        <translation>Amosa información sobre FUDcoin</translation>
+        <source>Show information about FonzieCoin</source>
+        <translation>Amosa información sobre FonzieCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -426,13 +426,13 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a FUDcoin address</source>
-        <translation>Enviar moedas a unha dirección FUDcoin</translation>
+        <source>Send coins to a FonzieCoin address</source>
+        <translation>Enviar moedas a unha dirección FonzieCoin</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for FUDcoin</source>
-        <translation>Modificar opcións de configuración para FUDcoin</translation>
+        <source>Modify configuration options for FonzieCoin</source>
+        <translation>Modificar opcións de configuración para FonzieCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -471,8 +471,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="-200"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -481,8 +481,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About FUDcoin</source>
-        <translation>&amp;Sobre FUDcoin</translation>
+        <source>&amp;About FonzieCoin</source>
+        <translation>&amp;Sobre FonzieCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -538,13 +538,13 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>FUDcoin client</source>
-        <translation>Cliente FUDcoin</translation>
+        <source>FonzieCoin client</source>
+        <translation>Cliente FonzieCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to FUDcoin network</source>
-        <translation><numerusform>%n conexión activa á red de FUDcoin</numerusform><numerusform>%n conexións activas á red de FUDcoin</numerusform></translation>
+        <source>%n active connection(s) to FonzieCoin network</source>
+        <translation><numerusform>%n conexión activa á red de FonzieCoin</numerusform><numerusform>%n conexións activas á red de FonzieCoin</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -658,7 +658,7 @@ Dirección: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid FUDcoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid FonzieCoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -718,7 +718,7 @@ Dirección: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. FUDcoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. FonzieCoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1038,7 +1038,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid FUDcoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid FonzieCoin address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1057,8 +1057,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>FUDcoin-Qt</source>
-        <translation>FUDcoin-Qt</translation>
+        <source>FonzieCoin-Qt</source>
+        <translation>FonzieCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1130,12 +1130,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start FUDcoin after logging in to the system.</source>
+        <source>Automatically start FonzieCoin after logging in to the system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start FUDcoin on system login</source>
+        <source>&amp;Start FonzieCoin on system login</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1155,7 +1155,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the FUDcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the FonzieCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1165,7 +1165,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the FUDcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the FonzieCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1240,7 +1240,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting FUDcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting FonzieCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1255,7 +1255,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show FUDcoin addresses in the transaction list or not.</source>
+        <source>Whether to show FonzieCoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1302,7 +1302,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting FUDcoin.</source>
+        <source>This setting will take effect after restarting FonzieCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1321,7 +1321,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FUDcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FonzieCoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1537,7 +1537,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the FUDcoin-Qt help message to get a list with possible FUDcoin command-line options.</source>
+        <source>Show the FonzieCoin-Qt help message to get a list with possible FonzieCoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1557,12 +1557,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>FUDcoin - Debug window</source>
+        <source>FonzieCoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>FUDcoin Core</source>
+        <source>FonzieCoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1572,7 +1572,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the FUDcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the FonzieCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1582,7 +1582,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the FUDcoin RPC console.</source>
+        <source>Welcome to the FonzieCoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1656,7 +1656,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 FUD</source>
+        <source>0.00 XFC</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1726,7 +1726,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 FUD</source>
+        <source>123.456 XFC</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1741,7 +1741,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1841,7 +1841,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid FUDcoin address</source>
+        <source>WARNING: Invalid FonzieCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1885,7 +1885,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
+        <source>The address to send the payment to  (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1915,7 +1915,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1939,7 +1939,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
+        <source>The address to sign the message with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1976,7 +1976,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this FUDcoin address</source>
+        <source>Sign the message to prove you own this FonzieCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2003,12 +2003,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
+        <source>The address the message was signed with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified FUDcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified FonzieCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2019,7 +2019,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2029,7 +2029,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter FUDcoin signature</source>
+        <source>Enter FonzieCoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2600,7 +2600,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>FUDcoin version</source>
+        <source>FonzieCoin version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2610,7 +2610,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or fudcoind</source>
+        <source>Send command to -server or fonziecoind</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2630,12 +2630,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: fudcoin.conf)</source>
+        <source>Specify configuration file (default: fonziecoin.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: fudcoind.pid)</source>
+        <source>Specify pid file (default: fonziecoind.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2785,7 +2785,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FUDcoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FonzieCoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2974,13 +2974,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FonzieCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3106,12 +3106,12 @@ for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  FUDcoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  FonzieCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-98"/>
-        <source>FUDcoin</source>
+        <source>FonzieCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3146,12 +3146,12 @@ for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of FUDcoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of FonzieCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart FUDcoin to complete</source>
+        <source>Wallet needed to be rewritten: restart FonzieCoin to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3221,7 +3221,7 @@ for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. FUDcoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. FonzieCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

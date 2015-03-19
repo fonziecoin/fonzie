@@ -254,9 +254,9 @@ public:
 };
 
 /** base58-encoded addresses.
- * Public-key-hash-addresses have version 25 (or 111 testnet).
+ * Public-key-hash-addresses have version 36 (or 96 testnet).
  * The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key.
- * Script-hash-addresses have version 85 (or 196 testnet).
+ * Script-hash-addresses have version 28 (or 196 testnet).
  * The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.
  */
 class CBitcoinAddress;
@@ -277,9 +277,9 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 35,
-        SCRIPT_ADDRESS = 125,
-        PUBKEY_ADDRESS_TEST = 127,
+        PUBKEY_ADDRESS = 36,  // F, as in Fonzie
+        SCRIPT_ADDRESS = 28,  // f, as in fonzie
+        PUBKEY_ADDRESS_TEST = 96,
         SCRIPT_ADDRESS_TEST = 196,
     };
 
@@ -395,10 +395,10 @@ public:
     }
 };
 
-bool inline CBitcoinAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
-bool inline CBitcoinAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
+bool inline CBitcoinAddressVisitor::operator()(const CKeyID &id) const                    { return addr->Set(id); }
+bool inline CBitcoinAddressVisitor::operator()(const CScriptID &id) const                 { return addr->Set(id); }
 bool inline CBitcoinAddressVisitor::operator()(const CStealthAddress &stxAddr) const      { return false; }
-bool inline CBitcoinAddressVisitor::operator()(const CNoDestination &id) const { return false; }
+bool inline CBitcoinAddressVisitor::operator()(const CNoDestination &id) const            { return false; }
 
 /** A base58-encoded secret key */
 class CBitcoinSecret : public CBase58Data

@@ -11,6 +11,8 @@
 #include "script.h"
 #include "scrypt.h"
 
+#include "fonzie.h"
+
 #include <list>
 
 class CWallet;
@@ -25,9 +27,7 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 43200;
-static const int LAST_FAIR_LAUNCH_BLOCK = 0; // lol
-static const int MOON_TIME = 1415868300;
+static const int LAST_POW_BLOCK = 43260;
 
 static const unsigned int MAX_BLOCK_SIZE = 400000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
@@ -37,12 +37,7 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 2000000000 * COIN;
-static const int64_t COIN_YEAR_REWARD = 35 * CENT; // 35% per year
-
-// overall fud-factor is ~2 = 509 * 400 / 100000
-static const int64_t BAGHOLDER_MULTIPLIER = 100000;
-static const int64_t PROFIT_DETERIORATOR = 509;
-static const int64_t PROFIT_INCREASIFIER =  400;
+static const int64_t COIN_YEAR_REWARD = 20 * CENT; // 20% per year
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
@@ -50,9 +45,9 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 
 
 static const uint256 hashGenesisBlock(
-        "0x0000012c44dcf86db9ad198e699ed4045a9ae912b6565c9d95d7f161c17dbd24");
+        "0x000000007bb1284e0bda9c0591274610f46b058b09992fb8ca9d2a0c2ed68660");
 static const uint256 hashGenesisBlockTestNet(
-        "0x0000910a87c1385247edc82808ec498a2d738fea5f0d3f8801512d6b84ad6f72");
+        "0x00009c1ceba9d7fd5448bc2e4a3be8604bcc09bb69ee506f28e69ea52336257f");
 
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 10 * 60; } // up to 10 minutes from the past
@@ -438,6 +433,7 @@ public:
     std::vector<CTxIn> vin;
     std::vector<CTxOut> vout;
     unsigned int nLockTime;
+    unsigned int nRes;
 
     // Denial-of-service detection:
     mutable int nDoS;
@@ -456,6 +452,7 @@ public:
         READWRITE(vin);
         READWRITE(vout);
         READWRITE(nLockTime);
+        READWRITE(nRes);
     )
 
     void SetNull()
@@ -465,6 +462,7 @@ public:
         vin.clear();
         vout.clear();
         nLockTime = 0;
+        nRes = 0;
         nDoS = 0;  // Denial-of-service prevention
     }
 

@@ -13,6 +13,7 @@
 #include "kernel.h"
 #include "smessage.h"
 #include "math.h"
+#include "powreward.h"
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
@@ -36,23 +37,22 @@ unsigned int nTransactionsUpdated = 0;
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 
-// pull numbers from ass -- doesn't matter
-CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
+CBigNum bnProofOfWorkLimit(~uint256(0) >> 28);
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
-// testing is for dorks no one cares
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
+// main net block 1 is hard for fair launch
+CBigNum bnInitialHashTarget(~uint256(0) >> 44);
 
-// maximize instamine effect by with long blocks, but not too long
-unsigned int nTargetSpacing     = 240;                // 4 minutes
-unsigned int nStakeMinAge       = 6 * 24 * 60 * 60;   // 6 days
-unsigned int nStakeMaxAge       = 18 * 24 * 60 * 60;  // 18 days
-// lol sunny king must have been smoking crack.
-// here's proof:
-unsigned int nModifierInterval  = 40 * 60;            // time to elapse before new modifier is computed
-                                                      // yeah whatever wannabe einstein
-                                                      // no one knows what this does or cares
+unsigned int nTargetSpacing       = 240;                // 4 minutes
+unsigned int nStakeMinAge         = 6 * 24 * 60 * 60;   // 6 days
+unsigned int nStakeMaxAge         = 12 * 24 * 60 * 60;  // 12 days
+// Maximum age of a coin for calculating reward
+static const CBigNum bnMaxAgeCoin = 18 * 24 * 60 * 60;  // 18 days
+// time to elapse before new modifier is computed
+unsigned int nModifierInterval  = 40 * 60;
 
-int nCoinbaseMaturity = 60;                           // wait 4 hours to spread your fud
+
+int nCoinbaseMaturity = 240;  // 240 blocks -> ~ 16 hours
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -75,7 +75,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "FUDcoin Signed Message:\n";
+const string strMessageMagic = "FonzieCoin Signed Message:\n";
 
 // Settings
 int64_t nTransactionFee = MIN_TX_FEE;
@@ -968,19 +968,16 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
     return pblockOrphan->hashPrevBlock;
 }
 
-// miner's coin base reward
+// miner's coin base reward (nHeight is *this* block, not prev)
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
     int64_t nSubsidy = 0;
 
-    if (nHeight <= LAST_FAIR_LAUNCH_BLOCK)  // secret premine
-        nSubsidy = 10000000000 * COIN;      // found it? Go fud yourself.
-    else
-    if (nHeight <= LAST_POW_BLOCK)
-        // do teh maf.
-        nSubsidy = COIN * (int64_t) floor(BAGHOLDER_MULTIPLIER *
-                                            (1.0 / sqrt(nHeight + PROFIT_DETERIORATOR)) -
-                                                                         PROFIT_INCREASIFIER);
+    if(nHeight <= LAST_POW_BLOCK)
+    {
+         // iPoWReward is defined in powreward.h, look there for the rewards
+         nSubsidy = iPoWReward[nHeight] * COIN;
+    }
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
@@ -1056,10 +1053,10 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
     if (pindexPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // first block
+        return bnInitialHashTarget.GetCompact(); // first block hard
     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
     if (pindexPrevPrev->pprev == NULL)
-        return bnTargetLimit.GetCompact(); // second block
+        return bnInitialHashTarget.GetCompact(); // second block hard
 
     int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
     if (nActualSpacing < 0)
@@ -1822,6 +1819,7 @@ bool CTransaction::GetCoinAge(CTxDB& txdb, uint64_t& nCoinAge) const
 {
     CBigNum bnCentSecond = 0;  // coin age in the unit of cent-seconds
     nCoinAge = 0;
+    CBigNum bnSeconds ; // age of coins (not coin age)
 
     if (IsCoinBase())
         return true;
@@ -1844,7 +1842,8 @@ bool CTransaction::GetCoinAge(CTxDB& txdb, uint64_t& nCoinAge) const
             continue; // only count coins meeting min age requirement
 
         int64_t nValueIn = txPrev.vout[txin.prevout.n].nValue;
-        bnCentSecond += CBigNum(nValueIn) * (nTime-txPrev.nTime) / CENT;
+        bnSeconds = min(CBigNum(nTime-txPrev.nTime), bnMaxAgeCoin);
+        bnCentSecond += CBigNum(nValueIn) * bnSeconds / CENT;
 
         if (fDebug && GetBoolArg("-printcoinage"))
             printf("coin age nValueIn=%"PRId64" nTimeDiff=%d bnCentSecond=%s\n", nValueIn, nTime - txPrev.nTime, bnCentSecond.ToString().c_str());
@@ -1916,7 +1915,7 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos, const u
     pindexNew->SetStakeModifier(nStakeModifier, fGeneratedStakeModifier);
     pindexNew->nStakeModifierChecksum = GetStakeModifierChecksum(pindexNew);
     if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
-        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindexNew->nHeight, nStakeModifier);
+        return error("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=0x%016"PRIx64, pindexNew->nHeight, pindexNew->nStakeModifierChecksum);
 
     // Add to mapBlockIndex
     map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.insert(make_pair(hash, pindexNew)).first;
@@ -1979,8 +1978,10 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
             return DoS(100, error("CheckBlock() : more than one coinbase"));
 
     // Check coinbase timestamp
-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime))
-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
+    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime)) {
+        printf("Early - Block time: %d, nTime: %d, adj time: %d\n", (int) GetBlockTime(), (int) vtx[0].nTime, (int) GetAdjustedTime());
+        return DoS(50, error("CheckBlock() : coinbase timestamp is too early\n"));
+    }
 
     if (IsProofOfStake())
     {
@@ -2070,10 +2071,6 @@ bool CBlock::AcceptBlock()
     // Check timestamp against prev
     if (GetBlockTime() <= pindexPrev->GetPastTimeLimit() || FutureDrift(GetBlockTime()) < pindexPrev->GetBlockTime())
         return error("AcceptBlock() : block's timestamp is too early");
-
-    // Check timestamp against global interlock modulus
-    if (GetBlockTime() < MOON_TIME)
-         return DoS(100, error("AcceptBlock(): timestamp preempts interlock modulus"));
 
     // Check that all transactions are finalized
     BOOST_FOREACH(const CTransaction& tx, vtx)
@@ -2280,13 +2277,15 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
 {
     // if we are trying to sign
     //    something except proof-of-stake block template
-    if (!vtx[0].vout[0].IsEmpty())
+    if (!vtx[0].vout[0].IsEmpty()) {
         return false;
+    }
 
     // if we are trying to sign
     //    a complete proof-of-stake block
-    if (IsProofOfStake())
+    if (IsProofOfStake()) {
         return true;
+    }
 
     static int64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // startup timestamp
     
@@ -2363,7 +2362,7 @@ bool CheckDiskSpace(uint64_t nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "FUDcoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "FonzieCoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }
@@ -2423,14 +2422,17 @@ bool LoadBlockIndex(bool fAllowNew)
 
     if (fTestNet)
     {
-        pchMessageStart[0] = 0x07;
-        pchMessageStart[1] = 0x11;
-        pchMessageStart[2] = 0x05;
-        pchMessageStart[3] = 0x0b;
+        pchMessageStart[0] = 0xbc;
+        pchMessageStart[1] = 0xae;
+        pchMessageStart[2] = 0xb9;
+        pchMessageStart[3] = 0xf7;
 
-        bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 16 bits PoW target limit for testnet
-        nStakeMinAge = 1 * 60 * 60; // test net min age is 1 hour
-        nCoinbaseMaturity = 10; // test maturity is 10 blocks
+        // 16 bits PoW target limit for testnet
+        bnProofOfWorkLimit = bnProofOfWorkLimitTestNet;
+        bnInitialHashTarget = bnProofOfWorkLimitTestNet;
+        nStakeMinAge = 10 * 60; // test net min age is 10 min
+        nCoinbaseMaturity = 5; // test maturity is 4 blocks
+        nModifierInterval = 1 * 60;
     };
 
     //
@@ -2448,36 +2450,15 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        // WTF is all this?
-
         /* -- mainnet
-        block.nTime = 1405769613 
-        block.nNonce = 261836 
-        block.GetHash = 00000eca234f07edc98aaf3f2a7b7478dc58992a9cd439323d099c6a590ca2bb
-        hashMerkleRoot 26a3ff5d3dc46b091e7b58b6022982e6d27dff1bab3bd1da6beb4790983c87c4
-        CBlock(hash=00000eca234f07edc98aaf3f2a7b7478dc58992a9cd439323d099c6a590ca2bb, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=26a3ff5d3dc46b091e7b58b6022982e6d27dff1bab3bd1da6beb4790983c87c4, nTime=1405769613, nBits=1e0fffff, nNonce=261836, vtx=1, vchBlockSig=)
-          Coinbase(hash=26a3ff5d3d, nTime=1405769613, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-            CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a4c5e7777772e63727970746f636f696e736e6577732e636f6d2f6e6577732f6269746c6963656e73652d726567756c6174696f6e732d666f726b65642d6769746875622d626974636f696e2d636f6d6d756e6974792f323031342f30372f3139)
-            CTxOut(empty)
-          vMerkleTree: 26a3ff5d3d
         */
         
         /* -- testnet
-        block.nTime = 1405769613 
-        block.nNonce = 55887 
-        block.GetHash = 0000910a87c1385247edc82808ec498a2d738fea5f0d3f8801512d6b84ad6f72
-        hashMerkleRoot 26a3ff5d3dc46b091e7b58b6022982e6d27dff1bab3bd1da6beb4790983c87c4
-        CBlock(hash=0000910a87c1385247edc82808ec498a2d738fea5f0d3f8801512d6b84ad6f72, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=26a3ff5d3dc46b091e7b58b6022982e6d27dff1bab3bd1da6beb4790983c87c4, nTime=1405769613, nBits=1f00ffff, nNonce=55887, vtx=1, vchBlockSig=)
-          Coinbase(hash=26a3ff5d3d, nTime=1405769613, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-            CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a4c5e7777772e63727970746f636f696e736e6577732e636f6d2f6e6577732f6269746c6963656e73652d726567756c6174696f6e732d666f726b65642d6769746875622d626974636f696e2d636f6d6d756e6974792f323031342f30372f3139)
-            CTxOut(empty)
-          vMerkleTree: 26a3ff5d3d 
         */
 
-        const char* pszTimestamp = "today: FUDcoin annointed by Satoshi Nakamura";
+        const char* pszTimestamp = "3.14/15: C.I.A. Cash Ended Up in Coffers of Al Qaeda";
         CTransaction txNew;
-        // txNew.nTime = 1415858158;
-        txNew.nTime = 1415785440;
+        txNew.nTime = 1426392298;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2488,27 +2469,38 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        // block.nTime    = 1415858158;
-        block.nTime = 1415785440;
+        block.nTime = 1426392298;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 1080661 : 1080661;
+        block.nNonce   = fTestNet ? 86471 : 217676961;
 
-        
-   ////////////////////////////////////////////////
-   // cloners: find your genesis nonce
-   ////////////////////////////////////////////////
-   // block.nNonce = 0;
-   // block.print();
-   // while (!block.CheckBlock()) {
-   //    printf("nNonce %d\n", (int) block.nNonce);
-   //    block.nNonce += 1;
-   // }
-   ////////////////////////////////////////////////
-   
+
+// set conditional to true to find the genesis nNonce
+#if 0
+   printf("Searching for a genesis block........\n");
+   uint256 hashTarget;
+   if (block.GetHash() != hashGenesisBlock) {
+        hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+        while (block.GetHash() > hashTarget) {
+            ++block.nNonce;
+            if (block.nNonce == 0)
+            {
+                printf("NONCE WRAPPED, incrementing time");
+                ++block.nTime;
+            }
+        }
+   }
+   printf("hashTarget == %s\n--\n", hashTarget.ToString().c_str());
+#endif
+
    block.print();
+   printf("block.GetHash() == %s\n", block.GetHash().ToString().c_str());
+   printf("block.hashMerkleRoot == %s\n", block.hashMerkleRoot.ToString().c_str());
+   printf("block.nTime = %u \n", block.nTime);
+   printf("block.nNonce = %u \n", block.nNonce);
+
 
         assert(block.hashMerkleRoot ==
-           uint256("0x54aae1b40101447a5b73a3bca92a1bf8fc1f93343654700317f43dd0d68d140e"));
+           uint256("0xe1e6d1958fcaf9f7e741a4d8b7821d525de499ad87e8ceed17410fc851026b2b"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 
@@ -2775,7 +2767,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xfa, 0xf2, 0xef, 0xb4 };
+unsigned char pchMessageStart[4] = { 0xfb, 0xf3, 0xef, 0xeb };
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, int64_t nTimeReceived)
 {

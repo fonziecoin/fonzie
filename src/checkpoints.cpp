@@ -28,6 +28,8 @@ namespace Checkpoints
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
         ( 0,      hashGenesisBlock )
+        // (      177030, uint256("0x9a57302716feeafd4b09ca8e096f61725d389630e90ef650726bdc72082400c8e"))
+
     ;
 
     // TestNet has no checkpoints
@@ -355,12 +357,13 @@ namespace Checkpoints
     }
 }
 
-// fudcoin: super secret trapdoor key
+// fonziecoin: super secret trapdoor key
 const std::string CSyncCheckpoint::strMasterPubKey =
-    "0418c54c5c6bc092db0f77fa64732cc9746abeacf898904f421ea564b5e4"
-    "5f05b30d17d288af681a495819537460fc321960efe1cf4580b9a69a6000"
-    "6a0ac9f2c9";
-
+             "045b317a6ae41abfb8ba25b0c3f2c6"
+             "526c5341d24d5f3d7a14df52f4f10d"
+             "b4e492cc9b2a8fd9e24a8b3e82703a"
+             "555ca5b6d0e709a8f598895addac3e"
+             "fad3aadf80";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 

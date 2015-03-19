@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About FUDcoin</source>
-        <translation>Vad du behöver veta om FUDcoin</translation>
+        <source>About FonzieCoin</source>
+        <translation>Vad du behöver veta om FonzieCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;FUDcoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;FUDcoin&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;FonzieCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;FonzieCoin&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -68,8 +68,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your FUDcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dessa är dina FUDcoin adesser för att mottaga betalningsförsändelser. Du kan även använda olika adresser för varje avsändare för att enkelt hålla koll på vem som har skickat en betalning.</translation>
+        <source>These are your FonzieCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dessa är dina FonzieCoin adesser för att mottaga betalningsförsändelser. Du kan även använda olika adresser för varje avsändare för att enkelt hålla koll på vem som har skickat en betalning.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -83,8 +83,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a FUDcoin address</source>
-        <translation>Signera ett meddelande för att bevisa att du äger FUDcoin adressen</translation>
+        <source>Sign a message to prove you own a FonzieCoin address</source>
+        <translation>Signera ett meddelande för att bevisa att du äger FonzieCoin adressen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -98,8 +98,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified FUDcoin address</source>
-        <translation>Verifiera ett meddelande för att försäkra dig över att det var signerat av en specifik FUDcoin adress</translation>
+        <source>Verify a message to ensure it was signed with a specified FonzieCoin address</source>
+        <translation>Verifiera ett meddelande för att försäkra dig över att det var signerat av en specifik FonzieCoin adress</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -266,8 +266,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-58"/>
-        <source>FUDcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>FUDcoin plånboken kommer nu att stängas för att slutföra krypteringen: Kom ihåg att även en krypterad plånboks säkerhet kan äventyras genom keyloggers eller dylika malwares.</translation>
+        <source>FonzieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>FonzieCoin plånboken kommer nu att stängas för att slutföra krypteringen: Kom ihåg att även en krypterad plånboks säkerhet kan äventyras genom keyloggers eller dylika malwares.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -380,8 +380,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about FUDcoin</source>
-        <translation>Visa information om FUDcoin</translation>
+        <source>Show information about FonzieCoin</source>
+        <translation>Visa information om FonzieCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -430,13 +430,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a FUDcoin address</source>
-        <translation>Skicka coins till en FUDcoin adress</translation>
+        <source>Send coins to a FonzieCoin address</source>
+        <translation>Skicka coins till en FonzieCoin adress</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for FUDcoin</source>
-        <translation>Modifiera konfigurations-alternativ för FUDcoin</translation>
+        <source>Modify configuration options for FonzieCoin</source>
+        <translation>Modifiera konfigurations-alternativ för FonzieCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -475,8 +475,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-200"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -485,8 +485,8 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About FUDcoin</source>
-        <translation>&amp;Om FUDcoin</translation>
+        <source>&amp;About FonzieCoin</source>
+        <translation>&amp;Om FonzieCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -542,13 +542,13 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>FUDcoin client</source>
-        <translation>FUDcoin klient</translation>
+        <source>FonzieCoin client</source>
+        <translation>FonzieCoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to FUDcoin network</source>
-        <translation><numerusform>%n aktiv anslutning till FUDcoin nätverket</numerusform><numerusform>%n aktiva anslutning till FUDcoin nätverket</numerusform></translation>
+        <source>%n active connection(s) to FonzieCoin network</source>
+        <translation><numerusform>%n aktiv anslutning till FonzieCoin nätverket</numerusform><numerusform>%n aktiva anslutning till FonzieCoin nätverket</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -662,8 +662,8 @@ Adress: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid FUDcoin address or malformed URI parameters.</source>
-        <translation>URI:n kan inte tolkas! Detta kan bero på en ogiltig FUDcoin adress eller felaktiga URI parametrar.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FonzieCoin address or malformed URI parameters.</source>
+        <translation>URI:n kan inte tolkas! Detta kan bero på en ogiltig FonzieCoin adress eller felaktiga URI parametrar.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -722,8 +722,8 @@ Adress: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. FUDcoin can no longer continue safely and will quit.</source>
-        <translation>Ett fatalt fel uppstod. FUDcoin kan inte fortsätta och stänger programmet.</translation>
+        <source>A fatal error occurred. FonzieCoin can no longer continue safely and will quit.</source>
+        <translation>Ett fatalt fel uppstod. FonzieCoin kan inte fortsätta och stänger programmet.</translation>
     </message>
 </context>
 <context>
@@ -1017,7 +1017,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message>
         <location line="+10"/>
         <source>The label associated with this address book entry</source>
-        <translation>Namnet som kopplats till denna FUDcoin-adress</translation>
+        <translation>Namnet som kopplats till denna FonzieCoin-adress</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1056,8 +1056,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid FUDcoin address.</source>
-        <translation>Den inslagna adressen &quot;%1&quot; är inte en giltig FUDcoin adress.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FonzieCoin address.</source>
+        <translation>Den inslagna adressen &quot;%1&quot; är inte en giltig FonzieCoin adress.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1075,8 +1075,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>FUDcoin-Qt</source>
-        <translation>FUDcoin-Qt</translation>
+        <source>FonzieCoin-Qt</source>
+        <translation>FonzieCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1148,13 +1148,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start FUDcoin after logging in to the system.</source>
-        <translation>Starta FUDcoin automatiskt vid inloggning.</translation>
+        <source>Automatically start FonzieCoin after logging in to the system.</source>
+        <translation>Starta FonzieCoin automatiskt vid inloggning.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start FUDcoin on system login</source>
-        <translation>&amp;Starta FUDcoin vid inloggning</translation>
+        <source>&amp;Start FonzieCoin on system login</source>
+        <translation>&amp;Starta FonzieCoin vid inloggning</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1173,8 +1173,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the FUDcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt FUDcoin klientens port på routern. Detta fungerar endast om din router stödjer UPnP och det är aktiverat.</translation>
+        <source>Automatically open the FonzieCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt FonzieCoin klientens port på routern. Detta fungerar endast om din router stödjer UPnP och det är aktiverat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1183,8 +1183,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the FUDcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Anslut till FUDcoin nätverket via en SOCKS proxy (t.ex. när du ansluter genom Tor).</translation>
+        <source>Connect to the FonzieCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Anslut till FonzieCoin nätverket via en SOCKS proxy (t.ex. när du ansluter genom Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1258,8 +1258,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting FUDcoin.</source>
-        <translation>Användargränssnittets språk kan ställas in här. Inställningen börjar gälla efter omstart av FUDcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FonzieCoin.</source>
+        <translation>Användargränssnittets språk kan ställas in här. Inställningen börjar gälla efter omstart av FonzieCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1273,8 +1273,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show FUDcoin addresses in the transaction list or not.</source>
-        <translation>Om FUDcoin adresser skall visas i transaktionslistan eller inte.</translation>
+        <source>Whether to show FonzieCoin addresses in the transaction list or not.</source>
+        <translation>Om FonzieCoin adresser skall visas i transaktionslistan eller inte.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1320,8 +1320,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting FUDcoin.</source>
-        <translation>Inställningen börjar gälla efter omstart av FUDcoin.</translation>
+        <source>This setting will take effect after restarting FonzieCoin.</source>
+        <translation>Inställningen börjar gälla efter omstart av FonzieCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1339,8 +1339,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FUDcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara gammal. Din plånbok synkroniseras automatiskt med FUDcoin nätverket efter att en anslutning skapats, men denna process är inte klar än.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FonzieCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara gammal. Din plånbok synkroniseras automatiskt med FonzieCoin nätverket efter att en anslutning skapats, men denna process är inte klar än.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1555,8 +1555,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the FUDcoin-Qt help message to get a list with possible FUDcoin command-line options.</source>
-        <translation>Visa FUDcoin-Qt hjälp meddelandet för att få en lista över möjliga FUDcoin kommandoradsalternativ.</translation>
+        <source>Show the FonzieCoin-Qt help message to get a list with possible FonzieCoin command-line options.</source>
+        <translation>Visa FonzieCoin-Qt hjälp meddelandet för att få en lista över möjliga FonzieCoin kommandoradsalternativ.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1575,13 +1575,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>FUDcoin - Debug window</source>
-        <translation>FUDcoin - Felsökningsfönster</translation>
+        <source>FonzieCoin - Debug window</source>
+        <translation>FonzieCoin - Felsökningsfönster</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>FUDcoin Core</source>
-        <translation>FUDcoin Core</translation>
+        <source>FonzieCoin Core</source>
+        <translation>FonzieCoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1590,8 +1590,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the FUDcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna FUDcoin felsöknings-loggfilen från nuvarande data mapp. Detta kan kan ta ett par minuter för stora log filer.</translation>
+        <source>Open the FonzieCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna FonzieCoin felsöknings-loggfilen från nuvarande data mapp. Detta kan kan ta ett par minuter för stora log filer.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1600,8 +1600,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the FUDcoin RPC console.</source>
-        <translation>Välkommen till FUDcoin RPC konsoll.</translation>
+        <source>Welcome to the FonzieCoin RPC console.</source>
+        <translation>Välkommen till FonzieCoin RPC konsoll.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1674,8 +1674,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 FUD</source>
-        <translation>123.456 FUD {0.00 ?}</translation>
+        <source>0.00 XFC</source>
+        <translation>123.456 XFC {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1744,8 +1744,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 FUD</source>
-        <translation>123.456 FUD</translation>
+        <source>123.456 XFC</source>
+        <translation>123.456 XFC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1759,8 +1759,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Fyll i en FUDcoin adress (t.ex. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Fyll i en FonzieCoin adress (t.ex. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1859,8 +1859,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid FUDcoin address</source>
-        <translation>VARNING: Ogiltig FUDcoin adress</translation>
+        <source>WARNING: Invalid FonzieCoin address</source>
+        <translation>VARNING: Ogiltig FonzieCoin adress</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1903,8 +1903,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Adressen att skicka betalningen till  (t.ex. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to send the payment to  (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Adressen att skicka betalningen till  (t.ex. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1933,8 +1933,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Fyll i en FUDcoin adress (t.ex. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Fyll i en FonzieCoin adress (t.ex. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
 </context>
 <context>
@@ -1957,8 +1957,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Adressen att signera meddelandet med (t.ex. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to sign the message with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Adressen att signera meddelandet med (t.ex. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1994,8 +1994,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this FUDcoin address</source>
-        <translation>Signera meddelandet för att verifiera att du äger denna FUDcoin adressen</translation>
+        <source>Sign the message to prove you own this FonzieCoin address</source>
+        <translation>Signera meddelandet för att verifiera att du äger denna FonzieCoin adressen</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2021,13 +2021,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Adressen meddelandet var signerad med (t.ex. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address the message was signed with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Adressen meddelandet var signerad med (t.ex. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified FUDcoin address</source>
-        <translation>Verifiera meddelandet för att vara säker på att det var signerat med den angivna FUDcoin adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified FonzieCoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att det var signerat med den angivna FonzieCoin adressen</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2037,8 +2037,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Fyll i en FUDcoin adress (t.ex. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Fyll i en FonzieCoin adress (t.ex. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2047,8 +2047,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter FUDcoin signature</source>
-        <translation>Fyll i FUDcoin signatur</translation>
+        <source>Enter FonzieCoin signature</source>
+        <translation>Fyll i FonzieCoin signatur</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2618,8 +2618,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>FUDcoin version</source>
-        <translation>FUDcoin version</translation>
+        <source>FonzieCoin version</source>
+        <translation>FonzieCoin version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2628,8 +2628,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or fudcoind</source>
-        <translation>Skicka kommando till -server eller fudcoind</translation>
+        <source>Send command to -server or fonziecoind</source>
+        <translation>Skicka kommando till -server eller fonziecoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2648,13 +2648,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: fudcoin.conf)</source>
-        <translation>Ange konfigurationsfilen (standard: fudcoin.conf)</translation>
+        <source>Specify configuration file (default: fonziecoin.conf)</source>
+        <translation>Ange konfigurationsfilen (standard: fonziecoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: fudcoind.pid)</source>
-        <translation>Ange pid filen (standard fudcoind.pid)</translation>
+        <source>Specify pid file (default: fonziecoind.pid)</source>
+        <translation>Ange pid filen (standard fonziecoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2803,8 +2803,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FUDcoin will not work properly.</source>
-        <translation>Varning: Kolla att din dators tid och datum är rätt. FUDcoin kan inte fungera ordentligt om tiden i datorn är fel.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FonzieCoin will not work properly.</source>
+        <translation>Varning: Kolla att din dators tid och datum är rätt. FonzieCoin kan inte fungera ordentligt om tiden i datorn är fel.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2993,24 +2993,24 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FonzieCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, du måste sätta rpcpassword i konfigurationsfilen:
  %s
 Det är rekommenderat att du använder följande slumpmässiga lösenord:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (du behöver inte komma ihåg detta lösenord)
 Användarnamnet och lösenordet FÅR INTE vara samma.
 Om filen inte finns, skapa den med endast ägarrättigheter.
 Det är också rekommenderat att sätta alertnotify så du blir notifierad om problem;
-till exempel: alertnotify=echo %%s | mail -s &quot;FUDcoin Varning&quot; admin@foo.com
+till exempel: alertnotify=echo %%s | mail -s &quot;FonzieCoin Varning&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3135,13 +3135,13 @@ till exempel: alertnotify=echo %%s | mail -s &quot;FUDcoin Varning&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  FUDcoin is probably already running.</source>
-        <translation>Kan inte låsa datan i mappen %s. FUDcoin är kanske redan startad.</translation>
+        <source>Cannot obtain a lock on data directory %s.  FonzieCoin is probably already running.</source>
+        <translation>Kan inte låsa datan i mappen %s. FonzieCoin är kanske redan startad.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3175,13 +3175,13 @@ till exempel: alertnotify=echo %%s | mail -s &quot;FUDcoin Varning&quot; admin@f
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of FUDcoin</source>
-        <translation>Kunde inte ladda wallet.dat: En nyare version av FUDcoin krävs</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FonzieCoin</source>
+        <translation>Kunde inte ladda wallet.dat: En nyare version av FonzieCoin krävs</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart FUDcoin to complete</source>
-        <translation>Plånboken måste skrivas om: Starta om FUDcoin för att slutföra</translation>
+        <source>Wallet needed to be rewritten: restart FonzieCoin to complete</source>
+        <translation>Plånboken måste skrivas om: Starta om FonzieCoin för att slutföra</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3250,8 +3250,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;FUDcoin Varning&quot; admin@f
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. FUDcoin is probably already running.</source>
-        <translation>Kan inte binda till %s på denna dator. FUDcoin är sannolikt redan startad.</translation>
+        <source>Unable to bind to %s on this computer. FonzieCoin is probably already running.</source>
+        <translation>Kan inte binda till %s på denna dator. FonzieCoin är sannolikt redan startad.</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About FUDcoin</source>
-        <translation>O FUDcoin</translation>
+        <source>About FonzieCoin</source>
+        <translation>O FonzieCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;FUDcoin&lt;/b&gt; version</source>
-        <translation>verzia &lt;b&gt;FUDcoinu&lt;/b&gt;</translation>
+        <source>&lt;b&gt;FonzieCoin&lt;/b&gt; version</source>
+        <translation>verzia &lt;b&gt;FonzieCoinu&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -67,8 +67,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your FUDcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše FUDcoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your FonzieCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše FonzieCoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -82,8 +82,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a FUDcoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto FUDcoin adresu</translation>
+        <source>Sign a message to prove you own a FonzieCoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto FonzieCoin adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -97,8 +97,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified FUDcoin address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou FUDcoin adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified FonzieCoin address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou FonzieCoin adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -265,8 +265,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-58"/>
-        <source>FUDcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>FUDcoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
+        <source>FonzieCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>FonzieCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -379,8 +379,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about FUDcoin</source>
-        <translation>Zobraziť informácie o FUDcoin</translation>
+        <source>Show information about FonzieCoin</source>
+        <translation>Zobraziť informácie o FonzieCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -429,13 +429,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a FUDcoin address</source>
-        <translation>Poslať mince na FUDcoin adresu</translation>
+        <source>Send coins to a FonzieCoin address</source>
+        <translation>Poslať mince na FonzieCoin adresu</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for FUDcoin</source>
-        <translation>Upraviť možnosti konfigurácie pre FUDcoin</translation>
+        <source>Modify configuration options for FonzieCoin</source>
+        <translation>Upraviť možnosti konfigurácie pre FonzieCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -474,8 +474,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-200"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -484,8 +484,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About FUDcoin</source>
-        <translation>&amp;O FUDcoin</translation>
+        <source>&amp;About FonzieCoin</source>
+        <translation>&amp;O FonzieCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -541,13 +541,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>FUDcoin client</source>
-        <translation>FUDcoin klient</translation>
+        <source>FonzieCoin client</source>
+        <translation>FonzieCoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to FUDcoin network</source>
-        <translation><numerusform>%n aktívne spojenie s FUDcoin sieťov</numerusform><numerusform>%n aktívnych spojení s FUDcoin sieťov</numerusform><numerusform>%n aktívnych spojení s FUDcoin sieťou</numerusform></translation>
+        <source>%n active connection(s) to FonzieCoin network</source>
+        <translation><numerusform>%n aktívne spojenie s FonzieCoin sieťov</numerusform><numerusform>%n aktívnych spojení s FonzieCoin sieťov</numerusform><numerusform>%n aktívnych spojení s FonzieCoin sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -660,8 +660,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid FUDcoin address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou FUDcoin adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid FonzieCoin address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou FonzieCoin adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -720,8 +720,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. FUDcoin can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. FUDcoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. FonzieCoin can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. FonzieCoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1054,8 +1054,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid FUDcoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou FUDcoin adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid FonzieCoin address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou FonzieCoin adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1073,8 +1073,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>FUDcoin-Qt</source>
-        <translation>FUDcoin-Qt</translation>
+        <source>FonzieCoin-Qt</source>
+        <translation>FonzieCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1146,13 +1146,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start FUDcoin after logging in to the system.</source>
-        <translation>Automaticky spustiť FUDcoin po prihlásení sa do systému.</translation>
+        <source>Automatically start FonzieCoin after logging in to the system.</source>
+        <translation>Automaticky spustiť FonzieCoin po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start FUDcoin on system login</source>
-        <translation>&amp;Spustiť FUDcoin pri prihlásení do systému</translation>
+        <source>&amp;Start FonzieCoin on system login</source>
+        <translation>&amp;Spustiť FonzieCoin pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1171,8 +1171,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the FUDcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta FUDcoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the FonzieCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta FonzieCoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1181,8 +1181,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the FUDcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojenie k sieti FUDcoin cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the FonzieCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojenie k sieti FonzieCoin cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1256,8 +1256,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting FUDcoin.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní FUDcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FonzieCoin.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní FonzieCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1271,8 +1271,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show FUDcoin addresses in the transaction list or not.</source>
-        <translation>Či chcete zobraziť FUDcoin adresy v zozname transakcií alebo nie.</translation>
+        <source>Whether to show FonzieCoin addresses in the transaction list or not.</source>
+        <translation>Či chcete zobraziť FonzieCoin adresy v zozname transakcií alebo nie.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1318,8 +1318,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting FUDcoin.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní FUDcoin.</translation>
+        <source>This setting will take effect after restarting FonzieCoin.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní FonzieCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1337,8 +1337,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FUDcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou FUDcoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the FonzieCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou FonzieCoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1553,8 +1553,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the FUDcoin-Qt help message to get a list with possible FUDcoin command-line options.</source>
-        <translation>Zobraziť FUDcoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku FUDcoin.</translation>
+        <source>Show the FonzieCoin-Qt help message to get a list with possible FonzieCoin command-line options.</source>
+        <translation>Zobraziť FonzieCoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku FonzieCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1573,13 +1573,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>FUDcoin - Debug window</source>
-        <translation>FUDcoin - Ladiace okno</translation>
+        <source>FonzieCoin - Debug window</source>
+        <translation>FonzieCoin - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>FUDcoin Core</source>
-        <translation>Jadro FUDcoin</translation>
+        <source>FonzieCoin Core</source>
+        <translation>Jadro FonzieCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1588,8 +1588,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the FUDcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte FUDcoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the FonzieCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte FonzieCoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1598,8 +1598,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the FUDcoin RPC console.</source>
-        <translation>Vitajte v konzole FUDcoin RPC.</translation>
+        <source>Welcome to the FonzieCoin RPC console.</source>
+        <translation>Vitajte v konzole FonzieCoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1672,8 +1672,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 FUD</source>
-        <translation>123.456 FUD {0.00 ?}</translation>
+        <source>0.00 XFC</source>
+        <translation>123.456 XFC {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1742,8 +1742,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 FUD</source>
-        <translation>123.456 FUD</translation>
+        <source>123.456 XFC</source>
+        <translation>123.456 XFC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1757,8 +1757,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Zadajte FUDcoin adresu (napr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Zadajte FonzieCoin adresu (napr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1857,8 +1857,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid FUDcoin address</source>
-        <translation>UPOZORNENIE: Neplatná FUDcoin adresa</translation>
+        <source>WARNING: Invalid FonzieCoin address</source>
+        <translation>UPOZORNENIE: Neplatná FonzieCoin adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1901,8 +1901,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Adresa pre poslanie platby (napr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to send the payment to  (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Adresa pre poslanie platby (napr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1931,8 +1931,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Zadajte FUDcoin adresu (napr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Zadajte FonzieCoin adresu (napr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
 </context>
 <context>
@@ -1955,8 +1955,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Adresa na podpísanie správy (napr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address to sign the message with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Adresa na podpísanie správy (napr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1992,8 +1992,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this FUDcoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto FUDcoin adresu</translation>
+        <source>Sign the message to prove you own this FonzieCoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto FonzieCoin adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2019,13 +2019,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Adresa správy bola podpísaná (napr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>The address the message was signed with (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Adresa správy bola podpísaná (napr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified FUDcoin address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou FUDcoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified FonzieCoin address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou FonzieCoin adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2035,8 +2035,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</source>
-        <translation>Zadajte FUDcoin adresu (napr. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)</translation>
+        <source>Enter a FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</source>
+        <translation>Zadajte FonzieCoin adresu (napr. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2045,8 +2045,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter FUDcoin signature</source>
-        <translation>Zadajte FUDcoin podpis</translation>
+        <source>Enter FonzieCoin signature</source>
+        <translation>Zadajte FonzieCoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2616,8 +2616,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>FUDcoin version</source>
-        <translation>FUDcoin verzia</translation>
+        <source>FonzieCoin version</source>
+        <translation>FonzieCoin verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2626,8 +2626,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or fudcoind</source>
-        <translation>Pošli príkaz na -server alebo fudcoind</translation>
+        <source>Send command to -server or fonziecoind</source>
+        <translation>Pošli príkaz na -server alebo fonziecoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2646,13 +2646,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: fudcoin.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: fudcoin.conf)</translation>
+        <source>Specify configuration file (default: fonziecoin.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: fonziecoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: fudcoind.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: fudcoind.pid)</translation>
+        <source>Specify pid file (default: fonziecoind.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: fonziecoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2801,8 +2801,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FUDcoin will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny FUDcoin nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FonzieCoin will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny FonzieCoin nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2991,24 +2991,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;FonzieCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
  %s
 Je odporúčané použiť nasledujúce náhodné heslo:
-rpcuser=fudcoinrpc
+rpcuser=fonziecoinrpc
 rpcpassword=%s
 (Nemusíte si pamätať toto heslo)
 Užívateľské meno a heslo nesmú byť rovnaké. 
 Ak súbor neexistuje, vytvorte ho s oprávneniami súborov vlastníkov iba na čítatanie.
 Odporúča sa tiež nastaviť alertnotify, takže budete upozornení na problémy;
-napríklad: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.com</translation>
+napríklad: alertnotify=echo %%s | mail -s &quot;FonzieCoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3132,13 +3132,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  FUDcoin is probably already running.</source>
-        <translation>Nemožno získať zámok na dátový adresár %s. FUDcoin už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s.  FonzieCoin is probably already running.</source>
+        <translation>Nemožno získať zámok na dátový adresár %s. FonzieCoin už pravdepodobne beží.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>FUDcoin</source>
-        <translation>FUDcoin</translation>
+        <source>FonzieCoin</source>
+        <translation>FonzieCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3172,13 +3172,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of FUDcoin</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu FUDcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FonzieCoin</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu FonzieCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart FUDcoin to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte FUDcoin k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart FonzieCoin to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte FonzieCoin k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3247,8 +3247,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;FUDcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. FUDcoin is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. FUDcoin je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. FonzieCoin is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. FonzieCoin je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -7,12 +7,12 @@ software written by Eric Young (eay@cryptsoft.com) and UPnP software written by
 Thomas Bernard.
 
 
-Mac OS X fudcoind build instructions
+Mac OS X fonziecoind build instructions
 Laszlo Hanyecz <solar@heliacal.net>
 Douglas Huff <dhuff@jrbobdobbs.org>
 
 
-See readme-qt.rst for instructions on building FUDcoin QT, the
+See readme-qt.rst for instructions on building FonzieCoin QT, the
 graphical user interface.
 
 Tested on 10.5 and 10.6 intel.  PPC is not supported because it's big-endian.
@@ -39,14 +39,14 @@ sudo port install boost db48 openssl miniupnpc
 Optionally install qrencode (and set USE_QRCODE=1):
 sudo port install qrencode
 
-4.  Now you should be able to build fudcoind:
+4.  Now you should be able to build fonziecoind:
 
-cd fudcoin/src
+cd fonziecoin/src
 make -f makefile.osx
 
 Run:
-  ./fudcoind --help  # for a list of command-line options.
+  ./fonziecoind --help  # for a list of command-line options.
 Run
-  ./fudcoind -daemon # to start the fudcoin daemon.
+  ./fonziecoind -daemon # to start the fonziecoin daemon.
 Run
-  ./fudcoind help # When the daemon is running, to get a list of RPC commands
+  ./fonziecoind help # When the daemon is running, to get a list of RPC commands

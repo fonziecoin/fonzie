@@ -110,10 +110,10 @@ Value getworkex(const Array& params, bool fHelp)
         );
 
     if (vNodes.empty())
-        throw JSONRPCError(-9, "FUDcoin is not connected!");
+        throw JSONRPCError(-9, "FonzieCoin is not connected!");
 
     if (IsInitialBlockDownload())
-        throw JSONRPCError(-10, "FUDcoin is downloading blocks...");
+        throw JSONRPCError(-10, "FonzieCoin is downloading blocks...");
 
     if (pindexBest->nHeight >= LAST_POW_BLOCK)
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");
@@ -244,10 +244,10 @@ Value getwork(const Array& params, bool fHelp)
             "If [data] is specified, tries to solve the block and returns true if it was successful.");
 
     if (vNodes.empty())
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "FUDcoin is not connected!");
+        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "FonzieCoin is not connected!");
 
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "FUDcoin is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "FonzieCoin is downloading blocks...");
 
     if (pindexBest->nHeight >= LAST_POW_BLOCK)
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");
@@ -264,8 +264,10 @@ Value getwork(const Array& params, bool fHelp)
         static CBlockIndex* pindexPrev;
         static int64_t nStart;
         static CBlock* pblock;
-        if (pindexPrev != pindexBest ||
-            (nTransactionsUpdated != nTransactionsUpdatedLast && GetTime() - nStart > 60))
+        if ((pindexPrev != pindexBest) ||
+            ((nTransactionsUpdated != nTransactionsUpdatedLast) && (GetTime() - nStart > 60)) ||
+            // give it 120 seconds for a new getwork
+            (pblock->GetBlockTime() >= FutureDrift((int64_t)pblock->vtx[0].nTime) + 120))
         {
             if (pindexPrev != pindexBest)
             {
@@ -388,10 +390,10 @@ Value getblocktemplate(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid mode");
 
     if (vNodes.empty())
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "FUDcoin is not connected!");
+        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "FonzieCoin is not connected!");
 
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "FUDcoin is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "FonzieCoin is downloading blocks...");
 
     if (pindexBest->nHeight >= LAST_POW_BLOCK)
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");

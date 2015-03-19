@@ -459,9 +459,6 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     if (hashBlock > hashTarget)
         return error("CheckWork() : proof-of-work not meeting target");
 
-    if (pblock->nTime < MOON_TIME)
-         return error("CheckWork() : time stamp invalid");
-
     //// debug print
     printf("CheckWork() : new proof-of-work block found  \n  hash: %s  \ntarget: %s\n", hashBlock.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
@@ -532,21 +529,23 @@ void StakeMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("fudcoin-miner");
+    RenameThread("fonziecoin-miner");
 
     bool fTryToSync = true;
 
     while (true)
     {
-        if (fShutdown)
+        if (fShutdown) {
             return;
+        }
 
         while (pwallet->IsLocked())
         {
             nLastCoinStakeSearchInterval = 0;
             MilliSleep(1000);
-            if (fShutdown)
+            if (fShutdown) {
                 return;
+            }
         }
 
         while (vNodes.empty() || IsInitialBlockDownload())
@@ -554,14 +553,16 @@ void StakeMiner(CWallet *pwallet)
             nLastCoinStakeSearchInterval = 0;
             fTryToSync = true;
             MilliSleep(1000);
-            if (fShutdown)
+            if (fShutdown) {
                 return;
+            }
         }
 
         if (fTryToSync)
         {
             fTryToSync = false;
-            if (vNodes.size() < 3 || nBestHeight < GetNumBlocksOfPeers())
+            if ((!fTestNet && (vNodes.size() < 3)) ||
+                (nBestHeight < GetNumBlocksOfPeers()))
             {
                 MilliSleep(60000);
                 continue;
@@ -573,8 +574,9 @@ void StakeMiner(CWallet *pwallet)
         //
         int64_t nFees;
         auto_ptr<CBlock> pblock(CreateNewBlock(pwallet, true, &nFees));
-        if (!pblock.get())
+        if (!pblock.get()) {
             return;
+        }
 
         // Trying to sign a block
         if (pblock->SignBlock(*pwallet, nFees))
@@ -584,7 +586,8 @@ void StakeMiner(CWallet *pwallet)
             SetThreadPriority(THREAD_PRIORITY_LOWEST);
             MilliSleep(240000);
         }
-        else
+        else {
             MilliSleep(nMinerSleep);
+        }
     }
 }

@@ -53,11 +53,19 @@
 #include <QStackedWidget>
 #include <QDateTime>
 #include <QMovie>
-#include <QFileDialog>
-#include <QDesktopServices>
+#if QT_VERSION < 0x050000
+     #include <QFileDialog>
+     #include <QDesktopServices>
+#endif
+#if QT_VERSION >= 0x050000
+     #include <QStandardPaths>
+     #include <QFileDialog>
+#endif
 #include <QTimer>
 #include <QDragEnterEvent>
-#include <QUrl>
+#if QT_VERSION < 0x050000
+     #include <QUrl>
+#endif
 #include <QStyle>
 #include <QStyleFactory>
 #include <QTextStream>
@@ -78,7 +86,7 @@ text-align: left;\
 QToolButton {\
 min-width:180px;\
 background-color: transparent;\
-border: 1px solid #3A3939;\
+border: 1px solid #C5C6C6;\
 border-radius: 3px;\
 margin: 3px;\
 padding-left: 5px;\
@@ -89,20 +97,20 @@ text-align: left;\
 padding-bottom:5px;\
 }\
 QToolButton:pressed {\
-background-color: #4A4949;\
-border: 1px solid silver;\
+background-color: #B5B6B6;\
+border: 1px solid #3F3F3F;\
 }\
 QToolButton:checked {\
-background-color: #777777;\
-border: 1px solid silver;\
+background-color: #888888;\
+border: 1px solid #3F3F3F;\
 }\
 QToolButton:hover {\
 background-color: #4A4949;\
-border: 1px solid gray;\
+border: 1px solid #ABABAB;\
 }"
 #define HORIZONTAL_TOOLBAR_STYLESHEET "QToolBar {\
-    border: 1px solid #393838;\
-    background: 1px solid #302F2F;\
+    border: 1px solid #C6C7C7;\
+    background: 1px solid #CFD0D0;\
     font-weight: bold;\
 }"
 
@@ -130,7 +138,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     nWeight(0)
 {
     resize(950, 550);
-    setWindowTitle(tr("FUDcoin") + " - " + tr("Wallet"));
+    setWindowTitle(tr("FonzieCoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -295,7 +303,7 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
-    sendCoinsAction->setToolTip(tr("Send coins to a FUDcoin address"));
+    sendCoinsAction->setToolTip(tr("Send coins to a FonzieCoin address"));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
@@ -341,14 +349,14 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About FUDcoin"), this);
-    aboutAction->setToolTip(tr("Show information about FUDcoin"));
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About FonzieCoin"), this);
+    aboutAction->setToolTip(tr("Show information about FonzieCoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setToolTip(tr("Modify configuration options for FUDcoin"));
+    optionsAction->setToolTip(tr("Modify configuration options for FonzieCoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -465,7 +473,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 #endif
             if(trayIcon)
             {
-                trayIcon->setToolTip(tr("FUDcoin client") + QString(" ") + tr("[testnet]"));
+                trayIcon->setToolTip(tr("FonzieCoin client") + QString(" ") + tr("[testnet]"));
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
                 toggleHideAction->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
@@ -542,7 +550,7 @@ void BitcoinGUI::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
-    trayIcon->setToolTip(tr("FUDcoin client"));
+    trayIcon->setToolTip(tr("FonzieCoin client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
@@ -612,7 +620,7 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to FUDcoin network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to FonzieCoin network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -941,7 +949,7 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             gotoSendCoinsPage();
         else
-            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid FUDcoin address or malformed URI parameters."));
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid FonzieCoin address or malformed URI parameters."));
     }
 
     event->acceptProposedAction();
@@ -956,7 +964,7 @@ void BitcoinGUI::handleURI(QString strURI)
         gotoSendCoinsPage();
     }
     else
-        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid FUDcoin address or malformed URI parameters."));
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid FonzieCoin address or malformed URI parameters."));
 }
 
 void BitcoinGUI::mainToolbarOrientation(Qt::Orientation orientation)
@@ -1038,7 +1046,11 @@ void BitcoinGUI::encryptWallet(bool status)
 
 void BitcoinGUI::backupWallet()
 {
+#if QT_VERSION < 0x050000
     QString saveDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+#else
+    QString saveDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+#endif
     QString filename = QFileDialog::getSaveFileName(this, tr("Backup Wallet"), saveDir, tr("Wallet Data (*.dat)"));
     if(!filename.isEmpty()) {
         if(!walletModel->backupWallet(filename)) {

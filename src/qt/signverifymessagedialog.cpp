@@ -24,11 +24,11 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->addressIn_SM->setPlaceholderText(tr("Enter an FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)"));
+    ui->addressIn_SM->setPlaceholderText(tr("Enter an FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
-    ui->addressIn_VM->setPlaceholderText(tr("Enter an FUDcoin address (e.g. FUDSTERtBmGNPrcJG5227h94h6LSffvVA8)"));
-    ui->signatureIn_VM->setPlaceholderText(tr("Enter FUDcoin signature"));
+    ui->addressIn_VM->setPlaceholderText(tr("Enter an FonzieCoin address (e.g. FonzieWayN849MtDhDCRB6n8awE1iVHZiM)"));
+    ui->signatureIn_VM->setPlaceholderText(tr("Enter FonzieCoin signature"));
 #endif
 
     GUIUtil::setupAddressWidget(ui->addressIn_SM, this);

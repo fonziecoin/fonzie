@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
+
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -25,6 +25,7 @@
 #include <signal.h>
 #endif
 
+unsigned short onion_port = TOR_PORT;
 
 using namespace std;
 using namespace boost;
@@ -69,7 +70,7 @@ void Shutdown(void* parg)
     static bool fTaken;
 
     // Make this thread recognisable as the shutdown thread
-    RenameThread("fudcoin-shutoff");
+    RenameThread("fonziecoin-shutoff");
 
     bool fFirstThread = false;
     {
@@ -97,7 +98,7 @@ void Shutdown(void* parg)
         delete pwalletMain;
         NewThread(ExitTimeout, NULL);
         MilliSleep(50);
-        printf("FUDcoin exited\n\n");
+        printf("FonzieCoin exited\n\n");
         fExit = true;
 #ifndef QT_GUI
         // ensure non-UI client gets exited here, but let Bitcoin-Qt reach 'return 0;' in bitcoin.cpp
@@ -152,12 +153,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("FUDcoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("FonzieCoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  fudcoind [options]                     " + "\n" +
-                  "  fudcoind [options] <command> [params]  " + _("Send command to -server or fudcoind") + "\n" +
-                  "  fudcoind [options] help                " + _("List commands") + "\n" +
-                  "  fudcoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  fonziecoind [options]                     " + "\n" +
+                  "  fonziecoind [options] <command> [params]  " + _("Send command to -server or fonziecoind") + "\n" +
+                  "  fonziecoind [options] help                " + _("List commands") + "\n" +
+                  "  fonziecoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -167,7 +168,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "fudcoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "fonziecoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -207,13 +208,13 @@ int main(int argc, char* argv[])
 
 bool static InitError(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("FUDcoin"), CClientUIInterface::OK | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, _("FonzieCoin"), CClientUIInterface::OK | CClientUIInterface::MODAL);
     return false;
 }
 
 bool static InitWarning(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("FUDcoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, _("FonzieCoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
     return true;
 }
 
@@ -235,8 +236,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: fudcoin.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: fudcoind.pid)") + "\n" +
+        "  -conf=<file>           " + _("Specify configuration file (default: FonzieCoin.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: fonziecoind.pid)") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
         "  -wallet=<dir>          " + _("Specify wallet file (within data directory)") + "\n" +
         "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 25)") + "\n" +
@@ -246,13 +247,14 @@ std::string HelpMessage()
         "  -socks=<n>             " + _("Select the version of socks proxy to use (4-5, default: 5)") + "\n" +
         "  -tor=<ip:port>         " + _("Use proxy to reach tor hidden services (default: same as -proxy)") + "\n"
         "  -dns                   " + _("Allow DNS lookups for -addnode, -seednode and -connect") + "\n" +
-        "  -port=<port>           " + _("Listen for connections on <port> (default: 54540 or testnet: 54541)") + "\n" +
+        "  -port=<port>           " + _("Listen for connections on <port> (default: 1974 or testnet: 21974)") + "\n" +
+        "  -torport=<port>        " + _("Connect to Tor through <torport> (default: 59590)") + "\n" +
         "  -maxconnections=<n>    " + _("Maintain at most <n> connections to peers (default: 125)") + "\n" +
         "  -addnode=<ip>          " + _("Add a node to connect to and attempt to keep the connection open") + "\n" +
         "  -connect=<ip>          " + _("Connect only to the specified node(s)") + "\n" +
         "  -seednode=<ip>         " + _("Connect to a node to retrieve peer addresses, and disconnect") + "\n" +
         "  -externalip=<ip>       " + _("Specify your own public address") + "\n" +
-        "  -onlynet=<net>         " + _("Only connect to nodes in network <net> (IPv4, IPv6 or Tor)") + "\n" +
+        "  -onionseed             " + _("Find peers using .onion seeds (default: 1 unless -connect)") + "\n" +
         "  -discover              " + _("Discover own IP address (default: 1 when listening and no -externalip)") + "\n" +
         "  -irc                   " + _("Find peers using internet relay chat (default: 0)") + "\n" +
         "  -listen                " + _("Accept connections from outside (default: 1 if no -proxy or -connect)") + "\n" +
@@ -292,7 +294,7 @@ std::string HelpMessage()
 #endif
         "  -rpcuser=<user>        " + _("Username for JSON-RPC connections") + "\n" +
         "  -rpcpassword=<pw>      " + _("Password for JSON-RPC connections") + "\n" +
-        "  -rpcport=<port>        " + _("Listen for JSON-RPC connections on <port> (default: 45450 or testnet: 45451)") + "\n" +
+        "  -rpcport=<port>        " + _("Listen for JSON-RPC connections on <port> (default: 11984 or testnet: 21984)") + "\n" +
         "  -rpcallowip=<ip>       " + _("Allow JSON-RPC connections from specified IP address") + "\n" +
         "  -rpcconnect=<ip>       " + _("Send commands to node running on <ip> (default: 127.0.0.1)") + "\n" +
         "  -blocknotify=<cmd>     " + _("Execute command when the best block changes (%s in cmd is replaced by block hash)") + "\n" +
@@ -412,6 +414,11 @@ bool AppInit2()
     nDerivationMethodIndex = 0;
 
     fTestNet = GetBoolArg("-testnet");
+    if (fTestNet) {
+       nTestNet = 1;
+    } else {
+       nTestNet = 0;
+    }
     
     if (fTestNet)
     {
@@ -425,6 +432,8 @@ bool AppInit2()
     }
 
     if (mapArgs.count("-connect") && mapMultiArgs["-connect"].size() > 0) {
+        // when only connecting to trusted nodes, do not seed via .onion, or listen by default
+        SoftSetBoolArg("-onionseed", false);
         // when only connecting to trusted nodes, do not seed via DNS, or listen by default
         SoftSetBoolArg("-dnsseed", false);
         SoftSetBoolArg("-listen", false);
@@ -515,7 +524,7 @@ bool AppInit2()
     // ********************************************************* Step 4: application initialization: dir lock, daemonize, pidfile, debug log
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. FUDcoin is shutting down."));
+        return InitError(_("Initialization sanity check failed. FonzieCoin is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
     std::string strWalletFileName = GetArg("-wallet", "wallet.dat");
@@ -530,7 +539,7 @@ bool AppInit2()
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  FUDcoin is probably already running."), strDataDir.c_str()));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  FonzieCoin is probably already running."), strDataDir.c_str()));
 
 #if !defined(WIN32) && !defined(QT_GUI)
     if (fDaemon)
@@ -557,7 +566,7 @@ bool AppInit2()
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    printf("FUDcoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+    printf("FonzieCoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
     printf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         printf("Startup time: %s\n", DateTimeStrFormat("%x %H:%M:%S", GetTime()).c_str());
@@ -566,7 +575,7 @@ bool AppInit2()
     std::ostringstream strErrors;
 
     if (fDaemon)
-        fprintf(stdout, "FUDcoin server starting\n");
+        fprintf(stdout, "FonzieCoin server starting\n");
 
     int64_t nStart;
 
@@ -598,7 +607,7 @@ bool AppInit2()
                                      " Original wallet.dat saved as wallet.{timestamp}.bak in %s; if"
                                      " your balance or transactions are incorrect you should"
                                      " restore from a backup."), strDataDir.c_str());
-            uiInterface.ThreadSafeMessageBox(msg, _("FUDcoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+            uiInterface.ThreadSafeMessageBox(msg, _("FonzieCoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         }
         if (r == CDBEnv::RECOVER_FAIL)
             return InitError(_("wallet.dat corrupt, salvage failed"));
@@ -611,81 +620,82 @@ bool AppInit2()
     if (nSocksVersion != 4 && nSocksVersion != 5)
         return InitError(strprintf(_("Unknown -socks proxy version requested: %i"), nSocksVersion));
 
-    if (mapArgs.count("-onlynet")) {
+//    if (mapArgs.count("-onlynet")) {
+//        std::set<enum Network> nets;
+//        BOOST_FOREACH(std::string snet, mapMultiArgs["-onlynet"]) {
+//            enum Network net = ParseNetwork(snet);
+//            if (net == NET_UNROUTABLE)
+//                return InitError(strprintf(_("Unknown network specified in -onlynet: '%s'"), snet.c_str()));
+//            nets.insert(net);
+//        }
+//        for (int n = 0; n < NET_MAX; n++) {
+//            enum Network net = (enum Network)n;
+//            if (!nets.count(net))
+//                SetLimited(net);
+//        }
+//    }
+
+    do {
         std::set<enum Network> nets;
-        BOOST_FOREACH(std::string snet, mapMultiArgs["-onlynet"]) {
-            enum Network net = ParseNetwork(snet);
-            if (net == NET_UNROUTABLE)
-                return InitError(strprintf(_("Unknown network specified in -onlynet: '%s'"), snet.c_str()));
-            nets.insert(net);
-        }
+        nets.insert(
+            NET_TOR
+        );
         for (int n = 0; n < NET_MAX; n++) {
             enum Network net = (enum Network)n;
             if (!nets.count(net))
                 SetLimited(net);
         }
-    }
+    } while (
+        false
+    );
 
-    CService addrProxy;
-    bool fProxy = false;
-    if (mapArgs.count("-proxy")) {
-        addrProxy = CService(mapArgs["-proxy"], 9050);
-        if (!addrProxy.IsValid())
-            return InitError(strprintf(_("Invalid -proxy address: '%s'"), mapArgs["-proxy"].c_str()));
 
-        if (!IsLimited(NET_IPV4))
-            SetProxy(NET_IPV4, addrProxy, nSocksVersion);
-        if (nSocksVersion > 4) {
-            if (!IsLimited(NET_IPV6))
-                SetProxy(NET_IPV6, addrProxy, nSocksVersion);
-            SetNameProxy(addrProxy, nSocksVersion);
-        }
-        fProxy = true;
-    }
+    CService addrOnion;
 
-    // -tor can override normal proxy, -notor disables tor entirely
-    if (!(mapArgs.count("-tor") && mapArgs["-tor"] == "0") && (fProxy || mapArgs.count("-tor"))) {
-        CService addrOnion;
-        if (!mapArgs.count("-tor"))
-            addrOnion = addrProxy;
-        else
-            addrOnion = CService(mapArgs["-tor"], 9050);
+    onion_port = (unsigned short)GetArg("-torport", TOR_PORT);
+
+    if (mapArgs.count("-tor") && mapArgs["-tor"] != "0") {
+        addrOnion = CService(mapArgs["-tor"], onion_port);
         if (!addrOnion.IsValid())
             return InitError(strprintf(_("Invalid -tor address: '%s'"), mapArgs["-tor"].c_str()));
+    } else {
+        addrOnion = CService("127.0.0.1", onion_port);
+    }
+
+    if (true) {
         SetProxy(NET_TOR, addrOnion, 5);
         SetReachable(NET_TOR);
     }
 
+
     // see Step 2: parameter interactions for more information about these
-    fNoListen = !GetBoolArg("-listen", true);
-    fDiscover = GetBoolArg("-discover", true);
     fNameLookup = GetBoolArg("-dns", true);
-#ifdef USE_UPNP
-    fUseUPnP = GetBoolArg("-upnp", USE_UPNP);
-#endif
 
     bool fBound = false;
-    if (!fNoListen)
-    {
-        std::string strError;
-        if (mapArgs.count("-bind")) {
-            BOOST_FOREACH(std::string strBind, mapMultiArgs["-bind"]) {
+    if (true) {
+        if (true) {
+            do {
                 CService addrBind;
-                if (!Lookup(strBind.c_str(), addrBind, GetListenPort(), false))
-                    return InitError(strprintf(_("Cannot resolve -bind address: '%s'"), strBind.c_str()));
+                if (!Lookup("127.0.0.1", addrBind, GetListenPort(), false))
+                    return InitError(strprintf(_("Cannot resolve binding address: '%s'"),  "127.0.0.1"));
                 fBound |= Bind(addrBind);
-            }
-        } else {
-            struct in_addr inaddr_any;
-            inaddr_any.s_addr = INADDR_ANY;
-            if (!IsLimited(NET_IPV6))
-                fBound |= Bind(CService(in6addr_any, GetListenPort()), false);
-            if (!IsLimited(NET_IPV4))
-                fBound |= Bind(CService(inaddr_any, GetListenPort()), !fBound);
+            } while (
+                false
+            );
         }
         if (!fBound)
-            return InitError(_("Failed to listen on any port. Use -listen=0 if you want this."));
+            return InitError(_("Failed to listen on any port."));
     }
+
+
+    // start up tor
+    if (!(mapArgs.count("-tor") && mapArgs["-tor"] != "0")) {
+      if (!NewThread(StartTor, NULL))
+        InitError(_("Error: could not start tor"));
+    }
+
+    wait_initialized();
+
 
     if (mapArgs.count("-externalip"))
     {
@@ -695,7 +705,29 @@ bool AppInit2()
                 return InitError(strprintf(_("Cannot resolve -externalip address: '%s'"), strAddr.c_str()));
             AddLocal(CService(strAddr, GetListenPort(), fNameLookup), LOCAL_MANUAL);
         }
+    } else {
+        string automatic_onion;
+        filesystem::path const hostname_path = GetDataDir(
+        ) / "onion" / "hostname";
+        if (
+            !filesystem::exists(
+                hostname_path
+            )
+        ) {
+            return InitError(strprintf(_("No external address found. %s"), hostname_path.string().c_str()));
+        }
+        ifstream file(
+            hostname_path.string(
+            ).c_str(
+            )
+        );
+        file >> automatic_onion;
+        AddLocal(CService(automatic_onion, GetListenPort(), fNameLookup), LOCAL_MANUAL);
     }
+
+    BOOST_FOREACH(string strDest, mapMultiArgs["-seednode"])
+        AddOneShot(strDest);
+
 
     if (mapArgs.count("-reservebalance")) // ppcoin: reserve balance amount
     {
@@ -706,14 +738,16 @@ bool AppInit2()
         }
     }
 
+
     if (mapArgs.count("-checkpointkey")) // ppcoin: checkpoint master priv key
     {
         if (!Checkpoints::SetCheckpointPrivKey(GetArg("-checkpointkey", "")))
             InitError(_("Unable to sign checkpoint, wrong checkpointkey?\n"));
     }
 
-    BOOST_FOREACH(string strDest, mapMultiArgs["-seednode"])
-        AddOneShot(strDest);
+
+    // TODO: replace this by DNSseed
+    // AddOneShot(string(""));
 
     // ********************************************************* Step 7: load blockchain
 
@@ -795,13 +829,13 @@ bool AppInit2()
         {
             string msg(_("Warning: error reading wallet.dat! All keys read correctly, but transaction data"
                          " or address book entries might be missing or incorrect."));
-            uiInterface.ThreadSafeMessageBox(msg, _("FUDcoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+            uiInterface.ThreadSafeMessageBox(msg, _("FonzieCoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
-            strErrors << _("Error loading wallet.dat: Wallet requires newer version of FUDcoin") << "\n";
+            strErrors << _("Error loading wallet.dat: Wallet requires newer version of FonzieCoin") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
-            strErrors << _("Wallet needed to be rewritten: restart FUDcoin to complete") << "\n";
+            strErrors << _("Wallet needed to be rewritten: restart FonzieCoin to complete") << "\n";
             printf("%s", strErrors.str().c_str());
             return InitError(strErrors.str());
         }
