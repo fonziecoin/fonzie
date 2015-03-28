@@ -52,6 +52,10 @@ static const CBigNum bnMaxAgeCoin = 18 * 24 * 60 * 60;  // 18 days
 unsigned int nModifierInterval  = 40 * 60;
 
 
+// 1428130800: Sat. Apr. 4 00:00:00 2015 PDT
+static const int64_t nEarliestStakeTime = 1428130800;
+
+
 int nCoinbaseMaturity = 240;  // 240 blocks -> ~ 16 hours
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -1052,11 +1056,22 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
         return bnTargetLimit.GetCompact(); // genesis block
 
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
-    if (pindexPrev->pprev == NULL)
-        return bnInitialHashTarget.GetCompact(); // first block hard
+    if (pindexPrev->pprev == NULL) {
+        if (fProofOfStake && (pindexLast->nTime >= nEarliestStakeTime)) {
+            return bnProofOfStakeLimit.GetCompact();
+        } else {
+            return bnInitialHashTarget.GetCompact(); // first block hard
+        }
+    }
+
     const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
-    if (pindexPrevPrev->pprev == NULL)
-        return bnInitialHashTarget.GetCompact(); // second block hard
+    if (pindexPrevPrev->pprev == NULL) {
+        if (fProofOfStake && (pindexLast->nTime >= nEarliestStakeTime)) {
+            return bnProofOfStakeLimit.GetCompact();
+        } else {
+            return bnInitialHashTarget.GetCompact(); // second block hard
+        }
+    }
 
     int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
     if (nActualSpacing < 0)
