@@ -17,7 +17,7 @@ win32 {
 }
 TEMPLATE = app
 TARGET = FonzieCoin-Qt
-VERSION = 1.1.0.0
+VERSION = 1.1.1.0
 INCLUDEPATH += src src/json src/qt src/tor
 INCLUDEPATH += src/tor/adapter src/tor/common src/tor/ext
 INCLUDEPATH += src/tor/ext/curve25519_donna src/tor/or
