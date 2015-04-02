@@ -107,6 +107,7 @@ CoinControlDialog::CoinControlDialog(QWidget *parent) :
 
     // (un)select all
     connect(ui->pushButtonSelectAll, SIGNAL(clicked()), this, SLOT(buttonSelectAllClicked()));
+    connect(ui->pushButtonSelect268, SIGNAL(clicked()), this, SLOT(buttonSelect268Clicked()));
 
     ui->treeWidget->setColumnWidth(COLUMN_CHECKBOX, 84);
     ui->treeWidget->setColumnWidth(COLUMN_AMOUNT, 100);
@@ -176,6 +177,34 @@ void CoinControlDialog::buttonSelectAllClicked()
     ui->treeWidget->setEnabled(true);
     CoinControlDialog::updateLabels(model, this);
 }
+
+// select 268 (as many as you can fit into one CTransaction)
+void CoinControlDialog::buttonSelect268Clicked()
+{
+    Qt::CheckState state = Qt::Unchecked;
+    ui->treeWidget->setEnabled(false);
+    for (int i = 0; i < ui->treeWidget->topLevelItemCount(); i++) {
+            if (ui->treeWidget->topLevelItem(i)->checkState(COLUMN_CHECKBOX) != state) {
+                ui->treeWidget->topLevelItem(i)->setCheckState(COLUMN_CHECKBOX, state);
+            }
+    }
+
+    state = Qt::Checked;
+    QTreeWidgetItemIterator it(ui->treeWidget, QTreeWidgetItemIterator::NoChildren);
+    int n = 0;
+    while (*it) {
+        (*it)->setCheckState(COLUMN_CHECKBOX, state);
+        n += 1;
+        if (n >= 268) {
+             break;
+        }
+      ++it;
+    }
+    printf("n is: %d\n", n);
+    ui->treeWidget->setEnabled(true);
+    CoinControlDialog::updateLabels(model, this);
+}
+
 
 // context menu
 void CoinControlDialog::showMenu(const QPoint &point)

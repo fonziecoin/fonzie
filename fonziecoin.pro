@@ -36,6 +36,7 @@ win32 {
 
 !macx:!win32:CONFIG += static
 
+
 macx:INCLUDEPATH += /opt/local/include/db53
 
 !macx:!win32 {
