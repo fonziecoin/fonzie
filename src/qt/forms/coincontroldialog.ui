@@ -397,7 +397,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButtonSelect300">
+        <widget class="QPushButton" name="pushButtonSelect268">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
            <horstretch>0</horstretch>

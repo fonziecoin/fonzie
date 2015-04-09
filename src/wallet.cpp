@@ -2344,6 +2344,7 @@ bool CWallet::GetStakeWeight(const CKeyStore& keystore, uint64_t& nMinWeight, ui
     int64_t nBalance = GetBalance();
 
     if (nBalance <= nReserveBalance)
+        nWeight = 0;
         return false;
 
     vector<const CWalletTx*> vwtxPrev;
@@ -2353,9 +2354,11 @@ bool CWallet::GetStakeWeight(const CKeyStore& keystore, uint64_t& nMinWeight, ui
     
     
     if (!SelectCoinsForStaking(nBalance - nReserveBalance, GetTime(), setCoins, nValueIn))
+        nWeight = 0;
         return false;
     
     if (setCoins.empty())
+        nWeight = 0;
         return false;
     
     
